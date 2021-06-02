@@ -31,43 +31,7 @@ int main(int argc, char *argv[])
     //kmean
     for (int i = 0; i < pv.size; i++)
     {
-
-        priority_queue<pair<float, int>> maxheap;
-        string result = "";
-        
-        int j = 0;
-        //fill the maxheap with the first K elements
-        for (j; maxheap.size() < K && j < pv.size; j++)
-        {   
-            if (i != j)
-                maxheap.push(make_pair(pv.getDistance(i, j), j));
-        }
-
-        //continue filling
-        for (j; j < pv.size; j++)
-        {
-            if (i == j)
-                continue;
-            //compute the distance
-            float d = pv.getDistance(i, j);
-            if (d < maxheap.top().first){
-                maxheap.pop();
-                maxheap.push(make_pair(d, j));
-            }
-        }
-
-        //insert last element of topK in result
-        result = to_string(maxheap.top().second);
-        maxheap.pop();
-        //insert rest of the elements
-        for (int t = 1; t < K; t++){
-            result = to_string(maxheap.top().second) + "," + result;
-            maxheap.pop();
-        }
-
-        result = to_string(i) + "\t" + result;
-
-        results.push_back(result);
+        results.push_back(knn(pv,i,K));
     }
 
     save("result", results);

@@ -41,3 +41,43 @@ PointVector read(std::string filename){
 
     return pv;
 }
+
+std::string knn(PointVector pv, int id, int K)
+{
+    std::priority_queue<std::pair<float, int>> maxheap;
+    std::string result = "";
+
+    int j = 0;
+    //fill the maxheap with the first K elements
+    for (j; maxheap.size() < K && j < pv.size; j++)
+    {
+        if (id != j)
+            maxheap.push(std::make_pair(pv.getDistance(id, j), j));
+    }
+
+    //continue filling
+    for (j; j < pv.size; j++)
+    {
+        if (id == j)
+            continue;
+        //compute the distance
+        float d = pv.getDistance(id, j);
+        if (d < maxheap.top().first)
+        {
+            maxheap.pop();
+            maxheap.push(std::make_pair(d, j));
+        }
+    }
+
+    //insert last element of topK in result
+    result = std::to_string(maxheap.top().second);
+    maxheap.pop();
+    //insert rest of the elements
+    for (int t = 1; t < K; t++)
+    {
+        result = std::to_string(maxheap.top().second) + "," + result;
+        maxheap.pop();
+    }
+
+    return std::to_string(id) + "\t" + result;
+}
