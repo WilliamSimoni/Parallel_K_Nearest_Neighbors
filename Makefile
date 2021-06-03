@@ -7,12 +7,15 @@ CC = g++
 CFLAGS  = -o3 -std=c++17
 
 # The build target 
-TARGETS = Sequential PointVector IOUtility
+TARGETS = Sequential Parallel PointVector IOUtility
 
 all: $(TARGETS) 
 
-Sequential: Sequential.cpp PointVector IOUtility
+Sequential: Sequential.cpp IOUtility
 	$(CC) $(CFLAGS) $< -o $@ IOUtility PointVector
+
+Parallel: Parallel.cpp IOUtility
+	$(CC) $(CFLAGS) $< -o $@ IOUtility PointVector -pthread
 
 IOUtility: IOUtility.cpp PointVector
 	$(CC) $(CFLAGS) $< -c -o $@ PointVector
