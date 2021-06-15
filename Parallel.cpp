@@ -48,19 +48,20 @@ int main(int argc, char *argv[])
         slices.push_back(make_pair(start, end));
     }
 
+    auto f = [&](int start, int end)
+    {
+        for (vector<string>::iterator it = results.begin() + start; it != results.begin() + end; ++it)
+        {
+            *it = knn(pv, distance(results.begin(), it), K);
+        }
+    };
+
+    vector<thread> threads;
+
     {
         utimer tf("Non serial fraction");
 
-        auto f = [&](int start, int end)
-        {
-            for (vector<string>::iterator it = results.begin() + start; it != results.begin() + end; ++it)
-            {
-                *it = knn(pv, distance(results.begin(), it), K);
-            }
-        };
-
         //creating threads
-        vector<thread> threads;
         for (int i = 0; i < n_w; i++)
         {
             threads.push_back(thread(f, slices[i].first, slices[i].second));
