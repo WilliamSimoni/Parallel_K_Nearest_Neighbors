@@ -1,21 +1,22 @@
 CC = g++
 
 # compiler flags:
-#  -g     - this flag adds debugging information to the executable file
-#  -Wall  - this flag is used to turn on most compiler warnings
-#  -03    - vectorization optimization
+#  -o3    - vectorization optimization
 CFLAGS  = -o3 -std=c++17
 
 # The build target 
-TARGETS = Sequential Parallel PointVector IOUtility
+TARGETS = Sequential Parallel FastflowPar PointVector IOUtility
 
 all: $(TARGETS) 
 
-Sequential: Sequential.cpp IOUtility
-	$(CC) $(CFLAGS) $< -o $@ IOUtility PointVector
+Sequential: Sequential.cpp IOUtility utimer
+	$(CC) $(CFLAGS) $< -o $@ IOUtility PointVector utimer
 
-Parallel: Parallel.cpp IOUtility
-	$(CC) $(CFLAGS) $< -o $@ IOUtility PointVector -pthread
+Parallel: Parallel.cpp IOUtility utimer
+	$(CC) $(CFLAGS) $< -o $@ IOUtility PointVector -pthread utimer
+
+FastflowPar: FastflowPar.cpp IOUtility utimer
+	$(CC) $(CFLAGS) -lpthread -Ifastflow $< -o $@ IOUtility PointVector -pthread utimer
 
 IOUtility: IOUtility.cpp PointVector
 	$(CC) $(CFLAGS) $< -c -o $@ PointVector
@@ -23,5 +24,8 @@ IOUtility: IOUtility.cpp PointVector
 PointVector: PointVector.cpp
 	$(CC) $(CFLAGS) $< -c -o $@
 
+utimer: utimer.cpp
+	$(CC) $(CFLAGS) $< -c -o $@
+	
 clean:
 	$(RM) $(TARGET)
