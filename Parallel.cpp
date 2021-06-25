@@ -2,6 +2,7 @@
 #include <vector>
 #include <string.h>
 #include <thread>
+#include <mutex> 
 
 #include "IOUtility.hpp"
 #include "utimer.cpp"
@@ -15,7 +16,6 @@ int main(int argc, char *argv[])
         K: knn parameter
         n_w: number of threads
     */
-
     utimer te("Entire Execution");
 
     // read program parameters
@@ -27,44 +27,48 @@ int main(int argc, char *argv[])
 
     //read the file
     PointVector pv = read(filename);
-    //Where the program stores the knn results for each point
-    vector<string> results(pv.size);
 
-    // static split
-    int chunk_size = (results.size()) / n_w;
-    int bonus = (results.size()) - chunk_size * n_w;
-    vector<pair<float, int>> slices;
+    vector<string> results(n_w);
 
-    for (int start = 0, end = chunk_size;
-         start < (results.size());
-         start = end, end = start + chunk_size)
     {
-        if (bonus)
+
+        utimer tf("parallel cost");
+
+        // static split
+        int chunk_size = (pv.size) / n_w;
+        int bonus = (pv.size) - chunk_size * n_w;
+        vector<pair<float, int>> slices;
+        for (int start = 0, end = chunk_size;
+             start < (pv.size);
+             start = end, end = start + chunk_size)
         {
-            end++;
-            bonus--;
+            if (bonus)
+            {
+                end++;
+                bonus--;
+            }
+
+            slices.push_back(make_pair(start, end));
         }
 
-        slices.push_back(make_pair(start, end));
-    }
-
-    auto f = [&](int start, int end)
-    {
-        for (vector<string>::iterator it = results.begin() + start; it != results.begin() + end; ++it)
+        auto f = [&](int start, int end, int id)
         {
-            *it = knn(pv, distance(results.begin(), it), K);
-        }
-    };
+            string result = "";
 
-    vector<thread> threads;
+            for (int i = start; i < end; i++)
+            {
+                result += knn(pv, i, K) + "\n";
+            }
 
-    {
-        utimer tf("Non serial fraction");
+            results[id] = result;
+        };
+
+        vector<thread> threads;
 
         //creating threads
         for (int i = 0; i < n_w; i++)
         {
-            threads.push_back(thread(f, slices[i].first, slices[i].second));
+            threads.push_back(thread(f, slices[i].first, slices[i].second, i));
         }
 
         for (auto &th : threads)
@@ -72,8 +76,10 @@ int main(int argc, char *argv[])
             th.join();
         }
     }
-
-    results.insert(results.begin(), "ID\t KNN");
-
-    save("result", results);
+    
+    ofstream output_file("./resultParallel.txt");
+    for (int i = 0; i < n_w; i++){
+        output_file << results[i];
+    }
+    output_file.close();
 }

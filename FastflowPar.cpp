@@ -31,21 +31,30 @@ int main(int argc, char *argv[])
     //read the file
     PointVector pv = read(filename);
     //Where the program stores the knn results for each point
-    vector<string> results(pv.size);
+    vector<string> results(n_w);
 
-    auto f = [&](const long i)
+    auto f = [&](const long start, const long stop, const long thid)
     {
-        results[i] = knn(pv, i, K);
+            string result = "";
+
+            for (int i = start; i < stop; i++)
+            {
+                result += knn(pv, i, K) + "\n";
+            }
+
+            results[thid] = result;
     };
-
-    ParallelFor pf(n_w);
+    
     {
-        utimer tf("Non serial fraction");
-        pf.parallel_for(0, results.size(), 1, 0, f);
+        utimer tf("parallel cost");
+        parallel_for_idx(0, pv.size, 1, 0, f, n_w);
     }
 
-    results.insert(results.begin(), "ID\t KNN");
-
-    save("result", results);
+    ofstream output_file("./resultFastFlow.txt");
+    for (int i = 0; i < n_w; i++){
+        printf("lunghezza: %ld\n", results[i].length());
+        output_file << results[i];
+    }
+    output_file.close();
     return 0;
 }

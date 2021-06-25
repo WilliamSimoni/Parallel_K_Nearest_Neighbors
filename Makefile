@@ -2,10 +2,10 @@ CC = g++
 
 # compiler flags:
 #  -o3    - vectorization optimization
-CFLAGS  = -o3 -std=c++17
+CFLAGS  = -O3 -std=c++17 -ftree-vectorizer-verbose=2
 
 # The build target 
-TARGETS = Sequential Parallel FastflowPar PointVector IOUtility
+TARGETS = Sequential Parallel FastflowPar PointVector IOUtility utimer
 
 all: $(TARGETS) 
 
@@ -28,4 +28,4 @@ utimer: utimer.cpp
 	$(CC) $(CFLAGS) $< -c -o $@
 	
 clean:
-	$(RM) $(TARGET)
+	$(RM) $(TARGETS) resultSeq.txt resultFastFlow.txt resultParallel.txt

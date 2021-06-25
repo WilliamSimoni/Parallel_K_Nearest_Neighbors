@@ -4,6 +4,13 @@ void save(std::string name, std::vector<std::string> toBeSaved){
     std::ofstream output_file("./" + name + ".txt");
     std::ostream_iterator<std::string> output_iterator(output_file, "\n");
     std::copy(toBeSaved.begin(), toBeSaved.end(), output_iterator);
+    output_file.close();
+}
+
+void save(std::string name, std::string toBeSaved){
+    std::ofstream output_file("./" + name + ".txt");
+    output_file << toBeSaved;
+    output_file.close();
 }
 
 PointVector read(std::string filename){

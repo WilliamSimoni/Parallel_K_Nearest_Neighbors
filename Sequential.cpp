@@ -28,8 +28,6 @@ int main(int argc, char *argv[])
     PointVector pv = read(filename);
     //Where the program stores the knn results for each point
     vector<string> results;
-    //write header
-    results.push_back("ID\t KNN");
 
     /*NON SERIAL FRACTION*/
     //kmean
@@ -42,7 +40,7 @@ int main(int argc, char *argv[])
     }
 
     /*SERIAL FRACTION*/
-    save("result", results);
+    save("resultSeq", results);
 
     //max_speedup = 1/(Entire Execution time - Non serial fraction time)/Entire Execution time
 }
