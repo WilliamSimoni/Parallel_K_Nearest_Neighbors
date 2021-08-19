@@ -27,15 +27,15 @@ int main(int argc, char *argv[])
 
     PointVector pv = read(filename);
     //Where the program stores the knn results for each point
-    vector<string> results;
+    string results;
 
     /*NON SERIAL FRACTION*/
     //kmean
-    {   
+    {
         utimer tf("Non serial fraction");
         for (int i = 0; i < pv.size; i++)
         {
-            results.push_back(knn(pv, i, K));
+            results += knn(pv, i, K) + "\n";
         }
     }
 

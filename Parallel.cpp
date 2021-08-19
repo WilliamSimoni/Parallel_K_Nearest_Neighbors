@@ -2,7 +2,7 @@
 #include <vector>
 #include <string.h>
 #include <thread>
-#include <mutex> 
+#include <mutex>
 
 #include "IOUtility.hpp"
 #include "utimer.cpp"
@@ -28,10 +28,35 @@ int main(int argc, char *argv[])
     //read the file
     PointVector pv = read(filename);
 
+    #ifndef NOTUSELOCALSOLUTION
     vector<string> results(n_w);
 
+    auto f = [&](int start, int end, int id)
+    {
+        string result = "";
+
+        for (int i = start; i < end; i++)
+        {
+            result += knn(pv, i, K) + "\n";
+        }
+
+        results[id] = result;
+    };
+
+    #else 
+    vector<string> results(pv.size);
+
+    auto f = [&](int start, int end, int id)
     {
 
+        for (int i = start; i < end; i++)
+        {
+            results[i] = knn(pv, i, K);
+        }
+    };
+    #endif
+
+    {
         utimer tf("parallel cost");
 
         // static split
@@ -51,18 +76,6 @@ int main(int argc, char *argv[])
             slices.push_back(make_pair(start, end));
         }
 
-        auto f = [&](int start, int end, int id)
-        {
-            string result = "";
-
-            for (int i = start; i < end; i++)
-            {
-                result += knn(pv, i, K) + "\n";
-            }
-
-            results[id] = result;
-        };
-
         vector<thread> threads;
 
         //creating threads
@@ -76,10 +89,18 @@ int main(int argc, char *argv[])
             th.join();
         }
     }
-    
+
+    #ifndef NOTUSELOCALSOLUTION
     ofstream output_file("./resultParallel.txt");
-    for (int i = 0; i < n_w; i++){
+    for (int i = 0; i < n_w; i++)
+    {
         output_file << results[i];
     }
     output_file.close();
+
+    #else
+
+    save("./resultParallel", results);
+
+    #endif
 }

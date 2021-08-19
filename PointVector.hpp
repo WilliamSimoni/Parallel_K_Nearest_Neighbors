@@ -27,7 +27,8 @@ class PointVector{
         void addPoint(Point);
         
         /**
-         * compute the distance between the points in position id1 and id2
+         * compute the distance between the points in position id1 and id2 
+         * Note: you should square root the returned value to
          *
          * @param id1 index of the first point in the pointVector
          * @param id2 index of the second point in the pointVector

@@ -2,10 +2,10 @@ CC = g++
 
 # compiler flags:
 #  -o3    - vectorization optimization
-CFLAGS  = -O3 -std=c++17 -ftree-vectorizer-verbose=2
+CFLAGS  = -O3 -std=c++17 -ftree-vectorizer-verbose=2 -finline-functions
 
 # The build target 
-TARGETS = Sequential Parallel FastflowPar PointVector IOUtility utimer
+TARGETS = Sequential Parallel FastflowPar PointVector IOUtility utimer ParallelNoLocalSol
 
 all: $(TARGETS) 
 
@@ -14,6 +14,9 @@ Sequential: Sequential.cpp IOUtility utimer
 
 Parallel: Parallel.cpp IOUtility utimer
 	$(CC) $(CFLAGS) $< -o $@ IOUtility PointVector -pthread utimer
+
+ParallelNoLocalSol: Parallel.cpp IOUtility utimer
+	$(CC) $(CFLAGS) $< -o $@ IOUtility PointVector -pthread utimer -D NOTUSELOCALSOLUTION
 
 FastflowPar: FastflowPar.cpp IOUtility utimer
 	$(CC) $(CFLAGS) -lpthread -Ifastflow $< -o $@ IOUtility PointVector -pthread utimer
@@ -28,4 +31,4 @@ utimer: utimer.cpp
 	$(CC) $(CFLAGS) $< -c -o $@
 	
 clean:
-	$(RM) $(TARGETS) resultSeq.txt resultFastFlow.txt resultParallel.txt
+	$(RM) $(TARGETS) *.txt

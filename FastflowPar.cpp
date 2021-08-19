@@ -46,13 +46,12 @@ int main(int argc, char *argv[])
     };
     
     {
-        utimer tf("parallel cost");
+        utimer tf("parallel part");
         parallel_for_idx(0, pv.size, 1, 0, f, n_w);
     }
 
     ofstream output_file("./resultFastFlow.txt");
     for (int i = 0; i < n_w; i++){
-        printf("lunghezza: %ld\n", results[i].length());
         output_file << results[i];
     }
     output_file.close();
