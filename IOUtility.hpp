@@ -29,7 +29,7 @@ void save(std::string name, std::vector<std::string> toBeSaved);
 void save(std::string name, std::string toBeSaved);
 
 /**
- * Given a vector of points, a point ID i and a K, it returns the K nearest neighbors of the point whose ID is i
+ * Given a vector of points, a point ID id and a K, it returns the K nearest neighbors of the point whose ID is id
  * @param pv vector of points
  * @param id point id 
  * @param K knn parameter

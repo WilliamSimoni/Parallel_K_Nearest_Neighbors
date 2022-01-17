@@ -33,7 +33,7 @@ class PointVector{
          * @param id1 index of the first point in the pointVector
          * @param id2 index of the second point in the pointVector
          * @throws std::out_of_range exception if id1 or id2 are not in bounds
-         * @return the euclidean distance between the two points
+         * @return the distance (without square root) between the two points
          */
         float getDistance(int id1, int id2);
 };
