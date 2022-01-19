@@ -27,20 +27,22 @@ PointVector read(std::string filename){
     PointVector pv;
 
     // Use a while loop together with the getline() function to read the file line by line
-    std::regex reg(",");
-    while (getline(input, line))
+    while (std::getline(input, line))
     {
-        //tokenizing the line
-        std::sregex_token_iterator iter(line.begin(), line.end(), reg, -1);
-        std::sregex_token_iterator end;
-        std::vector<std::string> vec(iter, end);
-
+        // Tokenizing w.r.t. space ','
+        std::istringstream tokenizer(line);
+        
         //creating the point
-        Point tmp;
-        tmp.x = stof(vec[0]);
-        tmp.y = stof(vec[1]);
+        std::string x;
+        std::string y;
+        std::getline(tokenizer, x, ',');
+        std::getline(tokenizer, y, ',');
 
-        //inserting the point
+        Point tmp = {
+            stof(x),
+            stof(y)
+        };
+        
         pv.addPoint(tmp);
     }
 
@@ -48,6 +50,7 @@ PointVector read(std::string filename){
 
     return pv;
 }
+
 
 std::string knn(PointVector pv, int id, int K)
 {
