@@ -42,10 +42,7 @@ int main(int argc, char *argv[])
         START(begin)
 
         // the string result contains the local result of the thread
-        string result;
-        //preallocating space for the strings does not improve performances
-        //result.reserve(K * (3+1) * (stop-start) + (3 + 4) * (stop-start) * 2);
-        result = "";
+        string result = "";
 
         for (int i = start; i < stop; i++)
         {
@@ -70,16 +67,14 @@ int main(int argc, char *argv[])
     }
     output_file.close();
 
-    //computing tot time for parallel part
-    auto max_time = times_per_thread[0];
-    for (int i = 1; i < n_w; i++)
+    // computing tot time for parallel part
+    auto tot_time = 0;
+    for (int i = 0; i < n_w; i++)
     {
-        if (max_time < times_per_thread [i])
-            max_time = times_per_thread[i];
+        tot_time += times_per_thread[i];
     }
-
-    // print the parallel time (max of times_per_thread)
-    cout << "parallel cost computed in " << max_time << " usec " << std::endl;
+    // print the parallel time (mean of times_per_thread)
+    cout << "parallel cost computed in " << tot_time / n_w << " usec " << std::endl;
     
     return 0;
 }

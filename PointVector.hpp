@@ -22,9 +22,10 @@ class PointVector{
         /**
          * Add a point to the vector
          *
-         * @param Point Point to be added
+         * @param x coordinate x of the new point
+         * @param y coordinate y of the new point
          */
-        void addPoint(Point);
+        void addPoint(float x, float y);
         
         /**
          * compute the distance between the points in position id1 and id2 

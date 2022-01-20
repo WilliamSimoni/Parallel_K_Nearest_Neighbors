@@ -21,29 +21,15 @@ PointVector read(std::string filename){
         throw std::invalid_argument("file " + filename + " does not exist");
 
     //array where read data is stored
-    std::string line;
+    char comma;
+    float x, y;
 
     //PointVector where points are stored
     PointVector pv;
 
-    // Use a while loop together with the getline() function to read the file line by line
-    while (std::getline(input, line))
-    {
-        // Tokenizing w.r.t. space ','
-        std::istringstream tokenizer(line);
-        
-        //creating the point
-        std::string x;
-        std::string y;
-        std::getline(tokenizer, x, ',');
-        std::getline(tokenizer, y, ',');
-
-        Point tmp = {
-            stof(x),
-            stof(y)
-        };
-        
-        pv.addPoint(tmp);
+    // iterate over the file to populate point vector
+    while ( input >> x >> comma >> y ) {
+        pv.addPoint(x,y);
     }
 
     input.close();

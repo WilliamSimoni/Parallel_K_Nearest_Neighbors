@@ -5,8 +5,9 @@ PointVector::PointVector(){
     PointVector::size = 0;
 }
 
-void PointVector::addPoint(Point p){
-    PointVector::vectorPoint.push_back(p);
+void PointVector::addPoint(float x, float y){
+    Point new_point = {x, y};
+    PointVector::vectorPoint.push_back(new_point);
     PointVector::size++;
 }
 

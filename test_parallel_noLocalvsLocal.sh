@@ -3,8 +3,8 @@
 #Create output file, override if already present  
 test_result=test_result_localvsnolocal.txt  
 
-DATA=./data/50000.txt
-K=7
+DATA=./data/100000.txt
+K=15
 
 TRIALS=5
 

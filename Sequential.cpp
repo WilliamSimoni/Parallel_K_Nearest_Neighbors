@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
     //read the file
 
     PointVector pv = read(filename);
+
     //Where the program stores the knn results for each point
     string results;
 
