@@ -36,9 +36,9 @@ int main(int argc, char *argv[])
     // vector containing the time required by each worker
     vector<long int> times_per_thread(n_w);
 
-#ifndef NOTUSELOCALSOLUTION
     vector<string> results(n_w);
 
+    //function executed by the thread
     auto f = [&](int start, int end, int id)
     {
         START(begin)
@@ -56,24 +56,6 @@ int main(int argc, char *argv[])
         STOP(begin, elapsed)
         times_per_thread[id] = elapsed;
     };
-
-#else
-
-    vector<string> results(pv.size);
-
-    auto f = [&](int start, int end, int id)
-    {
-        START(begin)
-
-        for (int i = start; i < end; i++)
-        {
-            results[i] = knn(pv, i, K);
-        }
-
-        STOP(begin, elapsed)
-        times_per_thread[id] = elapsed;
-    };
-#endif
 
     // static split
     int chunk_size = (pv.size) / n_w;
@@ -99,22 +81,21 @@ int main(int argc, char *argv[])
     {
         threads.push_back(thread(f, slices[i].first, slices[i].second, i));
 
-        //pinning threads (if requested)
-        if (pin_threads == 1)
+        // pinning threads (if requested)
+#ifdef DOPINNING
+        // code from https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/
+        //  Create a cpu_set_t object representing a set of CPUs. Clear it and mark
+        //  only CPU i as set.
+        cpu_set_t cpuset;
+        CPU_ZERO(&cpuset);
+        CPU_SET(i, &cpuset);
+        int rc = pthread_setaffinity_np(threads[i].native_handle(),
+                                        sizeof(cpu_set_t), &cpuset);
+        if (rc != 0)
         {
-            //code from https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/
-            // Create a cpu_set_t object representing a set of CPUs. Clear it and mark
-            // only CPU i as set.
-            cpu_set_t cpuset;
-            CPU_ZERO(&cpuset);
-            CPU_SET(i, &cpuset);
-            int rc = pthread_setaffinity_np(threads[i].native_handle(),
-                                            sizeof(cpu_set_t), &cpuset);
-            if (rc != 0)
-            {
-                std::cerr << "Error calling pthread_setaffinity_np: " << rc << "\n";
-            }
+            std::cerr << "Error calling pthread_setaffinity_np: " << rc << "\n";
         }
+#endif
     }
 
     for (auto &th : threads)
@@ -122,19 +103,7 @@ int main(int argc, char *argv[])
         th.join();
     }
 
-#ifndef NOTUSELOCALSOLUTION
-    ofstream output_file("./resultParallel.txt");
-    for (int i = 0; i < n_w; i++)
-    {
-        output_file << results[i];
-    }
-    output_file.close();
-
-#else
-
     save("./resultParallel", results);
-
-#endif
 
     // computing tot time for parallel part
     auto max_time = times_per_thread[0];

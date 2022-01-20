@@ -42,10 +42,7 @@ int main(int argc, char *argv[])
         START(begin)
 
         // the string result contains the local result of the thread
-        string result;
-        //preallocating space for the strings does not improve performances
-        //result.reserve(K * (3+1) * (stop-start) + (3 + 4) * (stop-start) * 2);
-        result = "";
+        string result = "";
 
         for (int i = start; i < stop; i++)
         {
