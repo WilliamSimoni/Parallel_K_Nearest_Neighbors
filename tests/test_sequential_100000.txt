@@ -1,0 +1,10 @@
+Parallel KNN tests with K=15 on dataset ./data/100000.txt
+Average time computed in 5 trials
+
+---------- SEQUENTIAL ----------
+
+Sequential test
+non-serial time: 204189058 usec
+serial time: 450435 usec
+entire program time: 204639494 usec
+% serial: 0.220 %

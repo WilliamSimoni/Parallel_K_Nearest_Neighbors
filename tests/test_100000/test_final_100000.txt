@@ -1,0 +1,3083 @@
+Parallel KNN tests with K=15 on dataset ./data/100000.txt
+Average time computed in 5 trials
+
+
+---------- PARALLEL WITH C++ THREADS ----------
+
+Number of Workers = 1
+parallel time: 205190443 usec
+serial time: 456002 usec
+entire program time: 205646446 usec
+% serial: 0.222 %
+
+Number of Workers = 3
+parallel time: 73368289 usec
+serial time: 450314 usec
+entire program time: 73818602 usec
+% serial: 0.610 %
+
+Number of Workers = 5
+parallel time: 44539184 usec
+serial time: 453517 usec
+entire program time: 44992700 usec
+% serial: 1.008 %
+
+Number of Workers = 7
+parallel time: 32135253 usec
+serial time: 449235 usec
+entire program time: 32584488 usec
+% serial: 1.379 %
+
+Number of Workers = 9
+parallel time: 25562006 usec
+serial time: 453329 usec
+entire program time: 26015335 usec
+% serial: 1.743 %
+
+Number of Workers = 11
+parallel time: 20456680 usec
+serial time: 456832 usec
+entire program time: 20913512 usec
+% serial: 2.184 %
+
+Number of Workers = 13
+parallel time: 18152403 usec
+serial time: 452371 usec
+entire program time: 18604774 usec
+% serial: 2.431 %
+
+Number of Workers = 15
+parallel time: 15191297 usec
+serial time: 451824 usec
+entire program time: 15643121 usec
+% serial: 2.888 %
+
+Number of Workers = 17
+parallel time: 15056947 usec
+serial time: 451205 usec
+entire program time: 15508152 usec
+% serial: 2.909 %
+
+Number of Workers = 19
+parallel time: 12577143 usec
+serial time: 455841 usec
+entire program time: 13032983 usec
+% serial: 3.498 %
+
+Number of Workers = 21
+parallel time: 11325248 usec
+serial time: 452920 usec
+entire program time: 11778168 usec
+% serial: 3.845 %
+
+Number of Workers = 23
+parallel time: 10779380 usec
+serial time: 452676 usec
+entire program time: 11232055 usec
+% serial: 4.030 %
+
+Number of Workers = 25
+parallel time: 9517212 usec
+serial time: 451325 usec
+entire program time: 9968537 usec
+% serial: 4.527 %
+
+Number of Workers = 27
+parallel time: 9448285 usec
+serial time: 450913 usec
+entire program time: 9899199 usec
+% serial: 4.555 %
+
+Number of Workers = 29
+parallel time: 8561213 usec
+serial time: 450359 usec
+entire program time: 9011573 usec
+% serial: 4.998 %
+
+Number of Workers = 31
+parallel time: 8637967 usec
+serial time: 450683 usec
+entire program time: 9088650 usec
+% serial: 4.959 %
+
+Number of Workers = 33
+parallel time: 7962493 usec
+serial time: 455708 usec
+entire program time: 8418201 usec
+% serial: 5.413 %
+
+Number of Workers = 35
+parallel time: 7993414 usec
+serial time: 451282 usec
+entire program time: 8444697 usec
+% serial: 5.344 %
+
+Number of Workers = 37
+parallel time: 7787449 usec
+serial time: 450219 usec
+entire program time: 8237668 usec
+% serial: 5.465 %
+
+Number of Workers = 39
+parallel time: 6576804 usec
+serial time: 452096 usec
+entire program time: 7028900 usec
+% serial: 6.432 %
+
+Number of Workers = 41
+parallel time: 7172170 usec
+serial time: 455305 usec
+entire program time: 7627475 usec
+% serial: 5.969 %
+
+Number of Workers = 43
+parallel time: 6137586 usec
+serial time: 450366 usec
+entire program time: 6587952 usec
+% serial: 6.836 %
+
+Number of Workers = 45
+parallel time: 6510161 usec
+serial time: 455798 usec
+entire program time: 6965959 usec
+% serial: 6.543 %
+
+Number of Workers = 47
+parallel time: 5830220 usec
+serial time: 447135 usec
+entire program time: 6277355 usec
+% serial: 7.123 %
+
+Number of Workers = 49
+parallel time: 6141964 usec
+serial time: 464340 usec
+entire program time: 6606304 usec
+% serial: 7.029 %
+
+Number of Workers = 51
+parallel time: 5673392 usec
+serial time: 471345 usec
+entire program time: 6144736 usec
+% serial: 7.671 %
+
+Number of Workers = 53
+parallel time: 5741383 usec
+serial time: 465763 usec
+entire program time: 6207146 usec
+% serial: 7.504 %
+
+Number of Workers = 55
+parallel time: 5513732 usec
+serial time: 467840 usec
+entire program time: 5981571 usec
+% serial: 7.821 %
+
+Number of Workers = 57
+parallel time: 5265721 usec
+serial time: 469417 usec
+entire program time: 5735138 usec
+% serial: 8.185 %
+
+Number of Workers = 59
+parallel time: 5042307 usec
+serial time: 476827 usec
+entire program time: 5519134 usec
+% serial: 8.640 %
+
+Number of Workers = 61
+parallel time: 4966337 usec
+serial time: 468788 usec
+entire program time: 5435125 usec
+% serial: 8.625 %
+
+Number of Workers = 63
+parallel time: 5192762 usec
+serial time: 471316 usec
+entire program time: 5664079 usec
+% serial: 8.321 %
+
+Number of Workers = 65
+parallel time: 5108261 usec
+serial time: 467207 usec
+entire program time: 5575468 usec
+% serial: 8.380 %
+
+Number of Workers = 67
+parallel time: 5111643 usec
+serial time: 466264 usec
+entire program time: 5577907 usec
+% serial: 8.359 %
+
+Number of Workers = 69
+parallel time: 5118186 usec
+serial time: 462493 usec
+entire program time: 5580680 usec
+% serial: 8.287 %
+
+Number of Workers = 71
+parallel time: 5097293 usec
+serial time: 456618 usec
+entire program time: 5553911 usec
+% serial: 8.222 %
+
+Number of Workers = 73
+parallel time: 4846386 usec
+serial time: 454713 usec
+entire program time: 5301099 usec
+% serial: 8.578 %
+
+Number of Workers = 75
+parallel time: 4665488 usec
+serial time: 446711 usec
+entire program time: 5112199 usec
+% serial: 8.738 %
+
+Number of Workers = 77
+parallel time: 4755555 usec
+serial time: 453278 usec
+entire program time: 5208834 usec
+% serial: 8.702 %
+
+Number of Workers = 79
+parallel time: 4546003 usec
+serial time: 452318 usec
+entire program time: 4998322 usec
+% serial: 9.049 %
+
+Number of Workers = 81
+parallel time: 4562855 usec
+serial time: 450076 usec
+entire program time: 5012931 usec
+% serial: 8.978 %
+
+Number of Workers = 83
+parallel time: 4356207 usec
+serial time: 446314 usec
+entire program time: 4802520 usec
+% serial: 9.293 %
+
+Number of Workers = 85
+parallel time: 4239798 usec
+serial time: 446972 usec
+entire program time: 4686770 usec
+% serial: 9.537 %
+
+Number of Workers = 87
+parallel time: 4265168 usec
+serial time: 455161 usec
+entire program time: 4720330 usec
+% serial: 9.643 %
+
+Number of Workers = 89
+parallel time: 4047292 usec
+serial time: 447782 usec
+entire program time: 4495074 usec
+% serial: 9.962 %
+
+Number of Workers = 91
+parallel time: 4059482 usec
+serial time: 451061 usec
+entire program time: 4510543 usec
+% serial: 10.000 %
+
+Number of Workers = 93
+parallel time: 4030132 usec
+serial time: 453603 usec
+entire program time: 4483735 usec
+% serial: 10.117 %
+
+Number of Workers = 95
+parallel time: 4151420 usec
+serial time: 451726 usec
+entire program time: 4603146 usec
+% serial: 9.813 %
+
+Number of Workers = 97
+parallel time: 3964067 usec
+serial time: 448575 usec
+entire program time: 4412642 usec
+% serial: 10.166 %
+
+Number of Workers = 99
+parallel time: 3821108 usec
+serial time: 448492 usec
+entire program time: 4269600 usec
+% serial: 10.504 %
+
+Number of Workers = 101
+parallel time: 3861708 usec
+serial time: 447975 usec
+entire program time: 4309683 usec
+% serial: 10.395 %
+
+Number of Workers = 103
+parallel time: 3777907 usec
+serial time: 450306 usec
+entire program time: 4228213 usec
+% serial: 10.650 %
+
+Number of Workers = 105
+parallel time: 3760732 usec
+serial time: 450029 usec
+entire program time: 4210761 usec
+% serial: 10.688 %
+
+Number of Workers = 107
+parallel time: 3762373 usec
+serial time: 449218 usec
+entire program time: 4211591 usec
+% serial: 10.666 %
+
+Number of Workers = 109
+parallel time: 3793021 usec
+serial time: 448469 usec
+entire program time: 4241490 usec
+% serial: 10.573 %
+
+Number of Workers = 111
+parallel time: 3595844 usec
+serial time: 446342 usec
+entire program time: 4042187 usec
+% serial: 11.042 %
+
+Number of Workers = 113
+parallel time: 3584085 usec
+serial time: 448617 usec
+entire program time: 4032703 usec
+% serial: 11.124 %
+
+Number of Workers = 115
+parallel time: 3634990 usec
+serial time: 443211 usec
+entire program time: 4078201 usec
+% serial: 10.868 %
+
+Number of Workers = 117
+parallel time: 3469881 usec
+serial time: 446250 usec
+entire program time: 3916132 usec
+% serial: 11.395 %
+
+Number of Workers = 119
+parallel time: 3503497 usec
+serial time: 453022 usec
+entire program time: 3956519 usec
+% serial: 11.450 %
+
+Number of Workers = 121
+parallel time: 3539974 usec
+serial time: 448704 usec
+entire program time: 3988678 usec
+% serial: 11.249 %
+
+Number of Workers = 123
+parallel time: 3475798 usec
+serial time: 448507 usec
+entire program time: 3924305 usec
+% serial: 11.429 %
+
+Number of Workers = 125
+parallel time: 3541428 usec
+serial time: 449201 usec
+entire program time: 3990629 usec
+% serial: 11.256 %
+
+Number of Workers = 127
+parallel time: 3507416 usec
+serial time: 451230 usec
+entire program time: 3958646 usec
+% serial: 11.399 %
+
+Number of Workers = 129
+parallel time: 3732684 usec
+serial time: 449361 usec
+entire program time: 4182045 usec
+% serial: 10.745 %
+
+Number of Workers = 131
+parallel time: 3775456 usec
+serial time: 453530 usec
+entire program time: 4228987 usec
+% serial: 10.724 %
+
+Number of Workers = 133
+parallel time: 3898849 usec
+serial time: 450869 usec
+entire program time: 4349718 usec
+% serial: 10.365 %
+
+Number of Workers = 135
+parallel time: 3814034 usec
+serial time: 454011 usec
+entire program time: 4268045 usec
+% serial: 10.637 %
+
+Number of Workers = 137
+parallel time: 3854419 usec
+serial time: 454657 usec
+entire program time: 4309076 usec
+% serial: 10.551 %
+
+Number of Workers = 139
+parallel time: 3680714 usec
+serial time: 451952 usec
+entire program time: 4132666 usec
+% serial: 10.936 %
+
+Number of Workers = 141
+parallel time: 3595712 usec
+serial time: 451973 usec
+entire program time: 4047685 usec
+% serial: 11.166 %
+
+Number of Workers = 143
+parallel time: 3592033 usec
+serial time: 452035 usec
+entire program time: 4044068 usec
+% serial: 11.178 %
+
+Number of Workers = 145
+parallel time: 3548701 usec
+serial time: 453010 usec
+entire program time: 4001712 usec
+% serial: 11.320 %
+
+Number of Workers = 147
+parallel time: 3451059 usec
+serial time: 451506 usec
+entire program time: 3902565 usec
+% serial: 11.569 %
+
+Number of Workers = 149
+parallel time: 3419963 usec
+serial time: 448818 usec
+entire program time: 3868781 usec
+% serial: 11.601 %
+
+Number of Workers = 151
+parallel time: 3501336 usec
+serial time: 447713 usec
+entire program time: 3949049 usec
+% serial: 11.337 %
+
+Number of Workers = 153
+parallel time: 3415947 usec
+serial time: 450227 usec
+entire program time: 3866174 usec
+% serial: 11.645 %
+
+Number of Workers = 155
+parallel time: 3398721 usec
+serial time: 452763 usec
+entire program time: 3851483 usec
+% serial: 11.756 %
+
+Number of Workers = 157
+parallel time: 3436098 usec
+serial time: 444612 usec
+entire program time: 3880710 usec
+% serial: 11.457 %
+
+Number of Workers = 159
+parallel time: 3384307 usec
+serial time: 449359 usec
+entire program time: 3833666 usec
+% serial: 11.721 %
+
+Number of Workers = 161
+parallel time: 3342813 usec
+serial time: 451925 usec
+entire program time: 3794739 usec
+% serial: 11.909 %
+
+Number of Workers = 163
+parallel time: 3524583 usec
+serial time: 450411 usec
+entire program time: 3974994 usec
+% serial: 11.331 %
+
+Number of Workers = 165
+parallel time: 3422043 usec
+serial time: 451776 usec
+entire program time: 3873819 usec
+% serial: 11.662 %
+
+Number of Workers = 167
+parallel time: 3421311 usec
+serial time: 453541 usec
+entire program time: 3874852 usec
+% serial: 11.705 %
+
+Number of Workers = 169
+parallel time: 3316102 usec
+serial time: 456030 usec
+entire program time: 3772132 usec
+% serial: 12.089 %
+
+Number of Workers = 171
+parallel time: 3346899 usec
+serial time: 451795 usec
+entire program time: 3798694 usec
+% serial: 11.893 %
+
+Number of Workers = 173
+parallel time: 3315395 usec
+serial time: 453110 usec
+entire program time: 3768505 usec
+% serial: 12.024 %
+
+Number of Workers = 175
+parallel time: 3297938 usec
+serial time: 448316 usec
+entire program time: 3746254 usec
+% serial: 11.967 %
+
+Number of Workers = 177
+parallel time: 3271670 usec
+serial time: 452116 usec
+entire program time: 3723786 usec
+% serial: 12.141 %
+
+Number of Workers = 179
+parallel time: 3182836 usec
+serial time: 452285 usec
+entire program time: 3635121 usec
+% serial: 12.442 %
+
+Number of Workers = 181
+parallel time: 3248636 usec
+serial time: 448733 usec
+entire program time: 3697369 usec
+% serial: 12.137 %
+
+Number of Workers = 183
+parallel time: 3194743 usec
+serial time: 452202 usec
+entire program time: 3646945 usec
+% serial: 12.399 %
+
+Number of Workers = 185
+parallel time: 3187870 usec
+serial time: 451947 usec
+entire program time: 3639816 usec
+% serial: 12.417 %
+
+Number of Workers = 187
+parallel time: 3101263 usec
+serial time: 452516 usec
+entire program time: 3553779 usec
+% serial: 12.733 %
+
+Number of Workers = 189
+parallel time: 3149968 usec
+serial time: 452555 usec
+entire program time: 3602523 usec
+% serial: 12.562 %
+
+Number of Workers = 191
+parallel time: 3087024 usec
+serial time: 451390 usec
+entire program time: 3538414 usec
+% serial: 12.757 %
+
+Number of Workers = 193
+parallel time: 3282819 usec
+serial time: 452099 usec
+entire program time: 3734918 usec
+% serial: 12.105 %
+
+Number of Workers = 195
+parallel time: 3371380 usec
+serial time: 447623 usec
+entire program time: 3819003 usec
+% serial: 11.721 %
+
+Number of Workers = 197
+parallel time: 3342423 usec
+serial time: 454652 usec
+entire program time: 3797075 usec
+% serial: 11.974 %
+
+Number of Workers = 199
+parallel time: 3293601 usec
+serial time: 459768 usec
+entire program time: 3753369 usec
+% serial: 12.249 %
+
+Number of Workers = 201
+parallel time: 3272238 usec
+serial time: 451830 usec
+entire program time: 3724068 usec
+% serial: 12.133 %
+
+Number of Workers = 203
+parallel time: 3293978 usec
+serial time: 450847 usec
+entire program time: 3744825 usec
+% serial: 12.039 %
+
+Number of Workers = 205
+parallel time: 3239218 usec
+serial time: 448515 usec
+entire program time: 3687733 usec
+% serial: 12.162 %
+
+Number of Workers = 207
+parallel time: 3187545 usec
+serial time: 451062 usec
+entire program time: 3638607 usec
+% serial: 12.397 %
+
+Number of Workers = 209
+parallel time: 3183819 usec
+serial time: 453983 usec
+entire program time: 3637802 usec
+% serial: 12.480 %
+
+Number of Workers = 211
+parallel time: 3147575 usec
+serial time: 452916 usec
+entire program time: 3600491 usec
+% serial: 12.579 %
+
+Number of Workers = 213
+parallel time: 3156112 usec
+serial time: 452577 usec
+entire program time: 3608689 usec
+% serial: 12.541 %
+
+Number of Workers = 215
+parallel time: 3087312 usec
+serial time: 455010 usec
+entire program time: 3542322 usec
+% serial: 12.845 %
+
+Number of Workers = 217
+parallel time: 3065707 usec
+serial time: 454578 usec
+entire program time: 3520286 usec
+% serial: 12.913 %
+
+Number of Workers = 219
+parallel time: 3060383 usec
+serial time: 451939 usec
+entire program time: 3512322 usec
+% serial: 12.867 %
+
+Number of Workers = 221
+parallel time: 3013193 usec
+serial time: 451656 usec
+entire program time: 3464849 usec
+% serial: 13.035 %
+
+Number of Workers = 223
+parallel time: 2988594 usec
+serial time: 451377 usec
+entire program time: 3439971 usec
+% serial: 13.122 %
+
+Number of Workers = 225
+parallel time: 3080383 usec
+serial time: 452514 usec
+entire program time: 3532897 usec
+% serial: 12.809 %
+
+Number of Workers = 227
+parallel time: 3095077 usec
+serial time: 455628 usec
+entire program time: 3550704 usec
+% serial: 12.832 %
+
+Number of Workers = 229
+parallel time: 3053543 usec
+serial time: 454572 usec
+entire program time: 3508116 usec
+% serial: 12.958 %
+
+Number of Workers = 231
+parallel time: 3042682 usec
+serial time: 457240 usec
+entire program time: 3499921 usec
+% serial: 13.064 %
+
+Number of Workers = 233
+parallel time: 3000417 usec
+serial time: 458155 usec
+entire program time: 3458572 usec
+% serial: 13.247 %
+
+Number of Workers = 235
+parallel time: 2983162 usec
+serial time: 458292 usec
+entire program time: 3441454 usec
+% serial: 13.317 %
+
+Number of Workers = 237
+parallel time: 2981513 usec
+serial time: 457181 usec
+entire program time: 3438694 usec
+% serial: 13.295 %
+
+Number of Workers = 239
+parallel time: 2983450 usec
+serial time: 453947 usec
+entire program time: 3437397 usec
+% serial: 13.206 %
+
+Number of Workers = 241
+parallel time: 2917135 usec
+serial time: 460389 usec
+entire program time: 3377524 usec
+% serial: 13.631 %
+
+Number of Workers = 243
+parallel time: 2918165 usec
+serial time: 458033 usec
+entire program time: 3376198 usec
+% serial: 13.567 %
+
+Number of Workers = 245
+parallel time: 2872554 usec
+serial time: 459405 usec
+entire program time: 3331960 usec
+% serial: 13.788 %
+
+Number of Workers = 247
+parallel time: 2865917 usec
+serial time: 464054 usec
+entire program time: 3329971 usec
+% serial: 13.936 %
+
+Number of Workers = 249
+parallel time: 2865382 usec
+serial time: 460828 usec
+entire program time: 3326210 usec
+% serial: 13.854 %
+
+Number of Workers = 251
+parallel time: 2866208 usec
+serial time: 456585 usec
+entire program time: 3322792 usec
+% serial: 13.741 %
+
+Number of Workers = 253
+parallel time: 2828417 usec
+serial time: 460522 usec
+entire program time: 3288938 usec
+% serial: 14.002 %
+
+Number of Workers = 255
+parallel time: 2839099 usec
+serial time: 457223 usec
+entire program time: 3296322 usec
+% serial: 13.871 %
+
+---------- PARALLEL WITH PINNING ----------
+
+Number of Workers = 1
+parallel time: 205613353 usec
+serial time: 461182 usec
+entire program time: 206074535 usec
+% serial: 0.224 %
+
+Number of Workers = 3
+parallel time: 73302522 usec
+serial time: 456639 usec
+entire program time: 73759161 usec
+% serial: 0.619 %
+
+Number of Workers = 5
+parallel time: 44178017 usec
+serial time: 456994 usec
+entire program time: 44635011 usec
+% serial: 1.024 %
+
+Number of Workers = 7
+parallel time: 31641064 usec
+serial time: 466648 usec
+entire program time: 32107713 usec
+% serial: 1.453 %
+
+Number of Workers = 9
+parallel time: 24624941 usec
+serial time: 449787 usec
+entire program time: 25074728 usec
+% serial: 1.794 %
+
+Number of Workers = 11
+parallel time: 20145780 usec
+serial time: 453239 usec
+entire program time: 20599020 usec
+% serial: 2.200 %
+
+Number of Workers = 13
+parallel time: 17055260 usec
+serial time: 452495 usec
+entire program time: 17507755 usec
+% serial: 2.585 %
+
+Number of Workers = 15
+parallel time: 14806577 usec
+serial time: 453092 usec
+entire program time: 15259669 usec
+% serial: 2.969 %
+
+Number of Workers = 17
+parallel time: 13088883 usec
+serial time: 446285 usec
+entire program time: 13535169 usec
+% serial: 3.297 %
+
+Number of Workers = 19
+parallel time: 11729311 usec
+serial time: 454063 usec
+entire program time: 12183374 usec
+% serial: 3.727 %
+
+Number of Workers = 21
+parallel time: 10628246 usec
+serial time: 450452 usec
+entire program time: 11078698 usec
+% serial: 4.066 %
+
+Number of Workers = 23
+parallel time: 9720086 usec
+serial time: 453479 usec
+entire program time: 10173565 usec
+% serial: 4.457 %
+
+Number of Workers = 25
+parallel time: 8941849 usec
+serial time: 450743 usec
+entire program time: 9392592 usec
+% serial: 4.799 %
+
+Number of Workers = 27
+parallel time: 8304527 usec
+serial time: 453388 usec
+entire program time: 8757915 usec
+% serial: 5.177 %
+
+Number of Workers = 29
+parallel time: 7743615 usec
+serial time: 453605 usec
+entire program time: 8197220 usec
+% serial: 5.534 %
+
+Number of Workers = 31
+parallel time: 7255319 usec
+serial time: 455860 usec
+entire program time: 7711179 usec
+% serial: 5.912 %
+
+Number of Workers = 33
+parallel time: 6827552 usec
+serial time: 448810 usec
+entire program time: 7276362 usec
+% serial: 6.168 %
+
+Number of Workers = 35
+parallel time: 6442146 usec
+serial time: 449627 usec
+entire program time: 6891773 usec
+% serial: 6.524 %
+
+Number of Workers = 37
+parallel time: 6108752 usec
+serial time: 454849 usec
+entire program time: 6563601 usec
+% serial: 6.930 %
+
+Number of Workers = 39
+parallel time: 5806089 usec
+serial time: 447155 usec
+entire program time: 6253244 usec
+% serial: 7.151 %
+
+Number of Workers = 41
+parallel time: 5538386 usec
+serial time: 454326 usec
+entire program time: 5992712 usec
+% serial: 7.581 %
+
+Number of Workers = 43
+parallel time: 5295119 usec
+serial time: 455520 usec
+entire program time: 5750639 usec
+% serial: 7.921 %
+
+Number of Workers = 45
+parallel time: 5078216 usec
+serial time: 456065 usec
+entire program time: 5534282 usec
+% serial: 8.241 %
+
+Number of Workers = 47
+parallel time: 4878138 usec
+serial time: 456604 usec
+entire program time: 5334742 usec
+% serial: 8.559 %
+
+Number of Workers = 49
+parallel time: 4697377 usec
+serial time: 464290 usec
+entire program time: 5161667 usec
+% serial: 8.995 %
+
+Number of Workers = 51
+parallel time: 4526862 usec
+serial time: 475329 usec
+entire program time: 5002191 usec
+% serial: 9.502 %
+
+Number of Workers = 53
+parallel time: 4377162 usec
+serial time: 467866 usec
+entire program time: 4845027 usec
+% serial: 9.657 %
+
+Number of Workers = 55
+parallel time: 4244708 usec
+serial time: 471811 usec
+entire program time: 4716518 usec
+% serial: 10.003 %
+
+Number of Workers = 57
+parallel time: 4115857 usec
+serial time: 470569 usec
+entire program time: 4586426 usec
+% serial: 10.260 %
+
+Number of Workers = 59
+parallel time: 3998597 usec
+serial time: 470534 usec
+entire program time: 4469131 usec
+% serial: 10.529 %
+
+Number of Workers = 61
+parallel time: 3886730 usec
+serial time: 470342 usec
+entire program time: 4357072 usec
+% serial: 10.795 %
+
+Number of Workers = 63
+parallel time: 3760445 usec
+serial time: 472835 usec
+entire program time: 4233280 usec
+% serial: 11.169 %
+
+Number of Workers = 65
+parallel time: 5663552 usec
+serial time: 472335 usec
+entire program time: 6135887 usec
+% serial: 7.698 %
+
+Number of Workers = 67
+parallel time: 5589522 usec
+serial time: 475203 usec
+entire program time: 6064725 usec
+% serial: 7.836 %
+
+Number of Workers = 69
+parallel time: 5444921 usec
+serial time: 468149 usec
+entire program time: 5913070 usec
+% serial: 7.917 %
+
+Number of Workers = 71
+parallel time: 5292859 usec
+serial time: 462429 usec
+entire program time: 5755288 usec
+% serial: 8.035 %
+
+Number of Workers = 73
+parallel time: 5160811 usec
+serial time: 469517 usec
+entire program time: 5630328 usec
+% serial: 8.339 %
+
+Number of Workers = 75
+parallel time: 5025824 usec
+serial time: 458062 usec
+entire program time: 5483885 usec
+% serial: 8.353 %
+
+Number of Workers = 77
+parallel time: 4894159 usec
+serial time: 459815 usec
+entire program time: 5353974 usec
+% serial: 8.588 %
+
+Number of Workers = 79
+parallel time: 4784315 usec
+serial time: 460832 usec
+entire program time: 5245148 usec
+% serial: 8.786 %
+
+Number of Workers = 81
+parallel time: 4661194 usec
+serial time: 461237 usec
+entire program time: 5122432 usec
+% serial: 9.004 %
+
+Number of Workers = 83
+parallel time: 4540687 usec
+serial time: 460930 usec
+entire program time: 5001617 usec
+% serial: 9.216 %
+
+Number of Workers = 85
+parallel time: 4438448 usec
+serial time: 466338 usec
+entire program time: 4904785 usec
+% serial: 9.508 %
+
+Number of Workers = 87
+parallel time: 4339950 usec
+serial time: 464576 usec
+entire program time: 4804526 usec
+% serial: 9.670 %
+
+Number of Workers = 89
+parallel time: 4260498 usec
+serial time: 463118 usec
+entire program time: 4723617 usec
+% serial: 9.804 %
+
+Number of Workers = 91
+parallel time: 4172993 usec
+serial time: 465014 usec
+entire program time: 4638007 usec
+% serial: 10.026 %
+
+Number of Workers = 93
+parallel time: 4094259 usec
+serial time: 456352 usec
+entire program time: 4550611 usec
+% serial: 10.028 %
+
+Number of Workers = 95
+parallel time: 4000361 usec
+serial time: 465567 usec
+entire program time: 4465928 usec
+% serial: 10.425 %
+
+Number of Workers = 97
+parallel time: 3915588 usec
+serial time: 463795 usec
+entire program time: 4379383 usec
+% serial: 10.590 %
+
+Number of Workers = 99
+parallel time: 3847028 usec
+serial time: 467273 usec
+entire program time: 4314301 usec
+% serial: 10.831 %
+
+Number of Workers = 101
+parallel time: 3784285 usec
+serial time: 459212 usec
+entire program time: 4243497 usec
+% serial: 10.822 %
+
+Number of Workers = 103
+parallel time: 3741992 usec
+serial time: 464427 usec
+entire program time: 4206419 usec
+% serial: 11.041 %
+
+Number of Workers = 105
+parallel time: 3664200 usec
+serial time: 459732 usec
+entire program time: 4123932 usec
+% serial: 11.148 %
+
+Number of Workers = 107
+parallel time: 3590599 usec
+serial time: 459001 usec
+entire program time: 4049600 usec
+% serial: 11.334 %
+
+Number of Workers = 109
+parallel time: 3531571 usec
+serial time: 459305 usec
+entire program time: 3990876 usec
+% serial: 11.509 %
+
+Number of Workers = 111
+parallel time: 3448487 usec
+serial time: 457751 usec
+entire program time: 3906239 usec
+% serial: 11.718 %
+
+Number of Workers = 113
+parallel time: 3385987 usec
+serial time: 465880 usec
+entire program time: 3851868 usec
+% serial: 12.095 %
+
+Number of Workers = 115
+parallel time: 3331222 usec
+serial time: 465786 usec
+entire program time: 3797008 usec
+% serial: 12.267 %
+
+Number of Workers = 117
+parallel time: 3260393 usec
+serial time: 467877 usec
+entire program time: 3728270 usec
+% serial: 12.549 %
+
+Number of Workers = 119
+parallel time: 3215184 usec
+serial time: 459503 usec
+entire program time: 3674687 usec
+% serial: 12.505 %
+
+Number of Workers = 121
+parallel time: 3169243 usec
+serial time: 460311 usec
+entire program time: 3629555 usec
+% serial: 12.682 %
+
+Number of Workers = 123
+parallel time: 3112103 usec
+serial time: 457494 usec
+entire program time: 3569597 usec
+% serial: 12.816 %
+
+Number of Workers = 125
+parallel time: 3066447 usec
+serial time: 460399 usec
+entire program time: 3526846 usec
+% serial: 13.054 %
+
+Number of Workers = 127
+parallel time: 3021962 usec
+serial time: 465220 usec
+entire program time: 3487182 usec
+% serial: 13.341 %
+
+Number of Workers = 129
+parallel time: 4208846 usec
+serial time: 456444 usec
+entire program time: 4665289 usec
+% serial: 9.784 %
+
+Number of Workers = 131
+parallel time: 4207780 usec
+serial time: 463373 usec
+entire program time: 4671153 usec
+% serial: 9.920 %
+
+Number of Workers = 133
+parallel time: 4141011 usec
+serial time: 459800 usec
+entire program time: 4600810 usec
+% serial: 9.994 %
+
+Number of Workers = 135
+parallel time: 4076903 usec
+serial time: 455039 usec
+entire program time: 4531942 usec
+% serial: 10.041 %
+
+Number of Workers = 137
+parallel time: 4016325 usec
+serial time: 460092 usec
+entire program time: 4476418 usec
+% serial: 10.278 %
+
+Number of Workers = 139
+parallel time: 3962644 usec
+serial time: 463014 usec
+entire program time: 4425658 usec
+% serial: 10.462 %
+
+Number of Workers = 141
+parallel time: 3901711 usec
+serial time: 464708 usec
+entire program time: 4366419 usec
+% serial: 10.643 %
+
+Number of Workers = 143
+parallel time: 3852782 usec
+serial time: 461873 usec
+entire program time: 4314654 usec
+% serial: 10.705 %
+
+Number of Workers = 145
+parallel time: 3801927 usec
+serial time: 463489 usec
+entire program time: 4265416 usec
+% serial: 10.866 %
+
+Number of Workers = 147
+parallel time: 3755732 usec
+serial time: 464839 usec
+entire program time: 4220571 usec
+% serial: 11.014 %
+
+Number of Workers = 149
+parallel time: 3704624 usec
+serial time: 459733 usec
+entire program time: 4164358 usec
+% serial: 11.040 %
+
+Number of Workers = 151
+parallel time: 3660172 usec
+serial time: 462582 usec
+entire program time: 4122754 usec
+% serial: 11.220 %
+
+Number of Workers = 153
+parallel time: 3610501 usec
+serial time: 459966 usec
+entire program time: 4070466 usec
+% serial: 11.300 %
+
+Number of Workers = 155
+parallel time: 3569516 usec
+serial time: 460080 usec
+entire program time: 4029596 usec
+% serial: 11.418 %
+
+Number of Workers = 157
+parallel time: 3522294 usec
+serial time: 465209 usec
+entire program time: 3987503 usec
+% serial: 11.667 %
+
+Number of Workers = 159
+parallel time: 3479607 usec
+serial time: 466156 usec
+entire program time: 3945763 usec
+% serial: 11.814 %
+
+Number of Workers = 161
+parallel time: 3443744 usec
+serial time: 466228 usec
+entire program time: 3909972 usec
+% serial: 11.924 %
+
+Number of Workers = 163
+parallel time: 3405390 usec
+serial time: 464677 usec
+entire program time: 3870067 usec
+% serial: 12.007 %
+
+Number of Workers = 165
+parallel time: 3362784 usec
+serial time: 467219 usec
+entire program time: 3830004 usec
+% serial: 12.199 %
+
+Number of Workers = 167
+parallel time: 3324739 usec
+serial time: 463745 usec
+entire program time: 3788483 usec
+% serial: 12.241 %
+
+Number of Workers = 169
+parallel time: 3290425 usec
+serial time: 460784 usec
+entire program time: 3751210 usec
+% serial: 12.284 %
+
+Number of Workers = 171
+parallel time: 3260710 usec
+serial time: 464934 usec
+entire program time: 3725644 usec
+% serial: 12.479 %
+
+Number of Workers = 173
+parallel time: 3217303 usec
+serial time: 468761 usec
+entire program time: 3686064 usec
+% serial: 12.717 %
+
+Number of Workers = 175
+parallel time: 3186997 usec
+serial time: 463410 usec
+entire program time: 3650407 usec
+% serial: 12.695 %
+
+Number of Workers = 177
+parallel time: 3152834 usec
+serial time: 463062 usec
+entire program time: 3615896 usec
+% serial: 12.806 %
+
+Number of Workers = 179
+parallel time: 3120132 usec
+serial time: 464290 usec
+entire program time: 3584422 usec
+% serial: 12.953 %
+
+Number of Workers = 181
+parallel time: 3091706 usec
+serial time: 465749 usec
+entire program time: 3557456 usec
+% serial: 13.092 %
+
+Number of Workers = 183
+parallel time: 3052907 usec
+serial time: 463156 usec
+entire program time: 3516063 usec
+% serial: 13.173 %
+
+Number of Workers = 185
+parallel time: 3034153 usec
+serial time: 463894 usec
+entire program time: 3498047 usec
+% serial: 13.262 %
+
+Number of Workers = 187
+parallel time: 3000089 usec
+serial time: 461562 usec
+entire program time: 3461651 usec
+% serial: 13.334 %
+
+Number of Workers = 189
+parallel time: 2975668 usec
+serial time: 465915 usec
+entire program time: 3441583 usec
+% serial: 13.538 %
+
+Number of Workers = 191
+parallel time: 2953855 usec
+serial time: 462613 usec
+entire program time: 3416468 usec
+% serial: 13.541 %
+
+Number of Workers = 193
+parallel time: 3553530 usec
+serial time: 460317 usec
+entire program time: 4013847 usec
+% serial: 11.468 %
+
+Number of Workers = 195
+parallel time: 3547294 usec
+serial time: 455734 usec
+entire program time: 4003029 usec
+% serial: 11.385 %
+
+Number of Workers = 197
+parallel time: 3515669 usec
+serial time: 463110 usec
+entire program time: 3978779 usec
+% serial: 11.640 %
+
+Number of Workers = 199
+parallel time: 3487116 usec
+serial time: 460561 usec
+entire program time: 3947677 usec
+% serial: 11.667 %
+
+Number of Workers = 201
+parallel time: 3442788 usec
+serial time: 461489 usec
+entire program time: 3904277 usec
+% serial: 11.820 %
+
+Number of Workers = 203
+parallel time: 3406483 usec
+serial time: 460021 usec
+entire program time: 3866505 usec
+% serial: 11.898 %
+
+Number of Workers = 205
+parallel time: 3375074 usec
+serial time: 454791 usec
+entire program time: 3829865 usec
+% serial: 11.875 %
+
+Number of Workers = 207
+parallel time: 3346440 usec
+serial time: 461105 usec
+entire program time: 3807546 usec
+% serial: 12.110 %
+
+Number of Workers = 209
+parallel time: 3323666 usec
+serial time: 462221 usec
+entire program time: 3785887 usec
+% serial: 12.209 %
+
+Number of Workers = 211
+parallel time: 3295472 usec
+serial time: 462757 usec
+entire program time: 3758229 usec
+% serial: 12.313 %
+
+Number of Workers = 213
+parallel time: 3258650 usec
+serial time: 463783 usec
+entire program time: 3722433 usec
+% serial: 12.459 %
+
+Number of Workers = 215
+parallel time: 3239049 usec
+serial time: 460348 usec
+entire program time: 3699397 usec
+% serial: 12.444 %
+
+Number of Workers = 217
+parallel time: 3209399 usec
+serial time: 465397 usec
+entire program time: 3674796 usec
+% serial: 12.665 %
+
+Number of Workers = 219
+parallel time: 3175605 usec
+serial time: 462568 usec
+entire program time: 3638173 usec
+% serial: 12.714 %
+
+Number of Workers = 221
+parallel time: 3154304 usec
+serial time: 461385 usec
+entire program time: 3615689 usec
+% serial: 12.761 %
+
+Number of Workers = 223
+parallel time: 3133170 usec
+serial time: 460885 usec
+entire program time: 3594055 usec
+% serial: 12.824 %
+
+Number of Workers = 225
+parallel time: 3097785 usec
+serial time: 465817 usec
+entire program time: 3563602 usec
+% serial: 13.072 %
+
+Number of Workers = 227
+parallel time: 3080064 usec
+serial time: 461172 usec
+entire program time: 3541236 usec
+% serial: 13.023 %
+
+Number of Workers = 229
+parallel time: 3043569 usec
+serial time: 461868 usec
+entire program time: 3505437 usec
+% serial: 13.176 %
+
+Number of Workers = 231
+parallel time: 3026921 usec
+serial time: 462193 usec
+entire program time: 3489114 usec
+% serial: 13.247 %
+
+Number of Workers = 233
+parallel time: 2997430 usec
+serial time: 463730 usec
+entire program time: 3461160 usec
+% serial: 13.398 %
+
+Number of Workers = 235
+parallel time: 2979087 usec
+serial time: 462568 usec
+entire program time: 3441655 usec
+% serial: 13.440 %
+
+Number of Workers = 237
+parallel time: 2953822 usec
+serial time: 464588 usec
+entire program time: 3418410 usec
+% serial: 13.591 %
+
+Number of Workers = 239
+parallel time: 2934594 usec
+serial time: 460777 usec
+entire program time: 3395371 usec
+% serial: 13.571 %
+
+Number of Workers = 241
+parallel time: 2913385 usec
+serial time: 467795 usec
+entire program time: 3381180 usec
+% serial: 13.835 %
+
+Number of Workers = 243
+parallel time: 2891464 usec
+serial time: 464662 usec
+entire program time: 3356127 usec
+% serial: 13.845 %
+
+Number of Workers = 245
+parallel time: 2885666 usec
+serial time: 465219 usec
+entire program time: 3350885 usec
+% serial: 13.883 %
+
+Number of Workers = 247
+parallel time: 2854428 usec
+serial time: 464428 usec
+entire program time: 3318856 usec
+% serial: 13.994 %
+
+Number of Workers = 249
+parallel time: 2833065 usec
+serial time: 465650 usec
+entire program time: 3298715 usec
+% serial: 14.116 %
+
+Number of Workers = 251
+parallel time: 2814762 usec
+serial time: 464957 usec
+entire program time: 3279718 usec
+% serial: 14.177 %
+
+Number of Workers = 253
+parallel time: 2800654 usec
+serial time: 463007 usec
+entire program time: 3263660 usec
+% serial: 14.187 %
+
+Number of Workers = 255
+parallel time: 2786600 usec
+serial time: 467753 usec
+entire program time: 3254353 usec
+% serial: 14.373 %
+
+---------- PARALLEL WITH FASTFLOW ----------
+
+Number of Workers = 1
+parallel time: 205021722 usec
+serial time: 446286 usec
+entire program time: 205468008 usec
+% serial: 0.217 %
+
+Number of Workers = 3
+parallel time: 73280230 usec
+serial time: 455868 usec
+entire program time: 73736098 usec
+% serial: 0.618 %
+
+Number of Workers = 5
+parallel time: 44160371 usec
+serial time: 459080 usec
+entire program time: 44619451 usec
+% serial: 1.029 %
+
+Number of Workers = 7
+parallel time: 31596142 usec
+serial time: 454726 usec
+entire program time: 32050868 usec
+% serial: 1.419 %
+
+Number of Workers = 9
+parallel time: 24597510 usec
+serial time: 453650 usec
+entire program time: 25051160 usec
+% serial: 1.811 %
+
+Number of Workers = 11
+parallel time: 20111461 usec
+serial time: 450202 usec
+entire program time: 20561663 usec
+% serial: 2.190 %
+
+Number of Workers = 13
+parallel time: 17057084 usec
+serial time: 455315 usec
+entire program time: 17512400 usec
+% serial: 2.600 %
+
+Number of Workers = 15
+parallel time: 14796785 usec
+serial time: 449061 usec
+entire program time: 15245846 usec
+% serial: 2.945 %
+
+Number of Workers = 17
+parallel time: 13080737 usec
+serial time: 452192 usec
+entire program time: 13532929 usec
+% serial: 3.341 %
+
+Number of Workers = 19
+parallel time: 11722990 usec
+serial time: 452356 usec
+entire program time: 12175346 usec
+% serial: 3.715 %
+
+Number of Workers = 21
+parallel time: 10619939 usec
+serial time: 445224 usec
+entire program time: 11065162 usec
+% serial: 4.024 %
+
+Number of Workers = 23
+parallel time: 9711031 usec
+serial time: 453671 usec
+entire program time: 10164702 usec
+% serial: 4.463 %
+
+Number of Workers = 25
+parallel time: 8945406 usec
+serial time: 448420 usec
+entire program time: 9393826 usec
+% serial: 4.774 %
+
+Number of Workers = 27
+parallel time: 8304860 usec
+serial time: 446754 usec
+entire program time: 8751615 usec
+% serial: 5.105 %
+
+Number of Workers = 29
+parallel time: 7738881 usec
+serial time: 451067 usec
+entire program time: 8189948 usec
+% serial: 5.508 %
+
+Number of Workers = 31
+parallel time: 7250119 usec
+serial time: 448025 usec
+entire program time: 7698144 usec
+% serial: 5.820 %
+
+Number of Workers = 33
+parallel time: 6825244 usec
+serial time: 452615 usec
+entire program time: 7277859 usec
+% serial: 6.219 %
+
+Number of Workers = 35
+parallel time: 6440056 usec
+serial time: 450584 usec
+entire program time: 6890640 usec
+% serial: 6.539 %
+
+Number of Workers = 37
+parallel time: 6108054 usec
+serial time: 452368 usec
+entire program time: 6560422 usec
+% serial: 6.895 %
+
+Number of Workers = 39
+parallel time: 5807211 usec
+serial time: 446505 usec
+entire program time: 6253715 usec
+% serial: 7.140 %
+
+Number of Workers = 41
+parallel time: 5542108 usec
+serial time: 457722 usec
+entire program time: 5999831 usec
+% serial: 7.629 %
+
+Number of Workers = 43
+parallel time: 5293069 usec
+serial time: 452230 usec
+entire program time: 5745299 usec
+% serial: 7.871 %
+
+Number of Workers = 45
+parallel time: 5081260 usec
+serial time: 454727 usec
+entire program time: 5535987 usec
+% serial: 8.214 %
+
+Number of Workers = 47
+parallel time: 4875162 usec
+serial time: 451455 usec
+entire program time: 5326618 usec
+% serial: 8.475 %
+
+Number of Workers = 49
+parallel time: 4693047 usec
+serial time: 468055 usec
+entire program time: 5161102 usec
+% serial: 9.069 %
+
+Number of Workers = 51
+parallel time: 4532044 usec
+serial time: 464412 usec
+entire program time: 4996456 usec
+% serial: 9.295 %
+
+Number of Workers = 53
+parallel time: 4374564 usec
+serial time: 471116 usec
+entire program time: 4845681 usec
+% serial: 9.722 %
+
+Number of Workers = 55
+parallel time: 4244057 usec
+serial time: 467689 usec
+entire program time: 4711746 usec
+% serial: 9.926 %
+
+Number of Workers = 57
+parallel time: 4113960 usec
+serial time: 476009 usec
+entire program time: 4589968 usec
+% serial: 10.371 %
+
+Number of Workers = 59
+parallel time: 3992281 usec
+serial time: 469614 usec
+entire program time: 4461895 usec
+% serial: 10.525 %
+
+Number of Workers = 61
+parallel time: 3875578 usec
+serial time: 474111 usec
+entire program time: 4349689 usec
+% serial: 10.900 %
+
+Number of Workers = 63
+parallel time: 3723482 usec
+serial time: 475614 usec
+entire program time: 4199095 usec
+% serial: 11.327 %
+
+Number of Workers = 65
+parallel time: 5674567 usec
+serial time: 471036 usec
+entire program time: 6145603 usec
+% serial: 7.665 %
+
+Number of Workers = 67
+parallel time: 5599050 usec
+serial time: 462685 usec
+entire program time: 6061735 usec
+% serial: 7.633 %
+
+Number of Workers = 69
+parallel time: 5442016 usec
+serial time: 455395 usec
+entire program time: 5897411 usec
+% serial: 7.722 %
+
+Number of Workers = 71
+parallel time: 5304907 usec
+serial time: 471445 usec
+entire program time: 5776352 usec
+% serial: 8.162 %
+
+Number of Workers = 73
+parallel time: 5174312 usec
+serial time: 463142 usec
+entire program time: 5637454 usec
+% serial: 8.215 %
+
+Number of Workers = 75
+parallel time: 5028808 usec
+serial time: 457843 usec
+entire program time: 5486650 usec
+% serial: 8.345 %
+
+Number of Workers = 77
+parallel time: 4902527 usec
+serial time: 456925 usec
+entire program time: 5359452 usec
+% serial: 8.526 %
+
+Number of Workers = 79
+parallel time: 4773080 usec
+serial time: 458324 usec
+entire program time: 5231404 usec
+% serial: 8.761 %
+
+Number of Workers = 81
+parallel time: 4666934 usec
+serial time: 467812 usec
+entire program time: 5134746 usec
+% serial: 9.111 %
+
+Number of Workers = 83
+parallel time: 4543870 usec
+serial time: 462595 usec
+entire program time: 5006465 usec
+% serial: 9.240 %
+
+Number of Workers = 85
+parallel time: 4442710 usec
+serial time: 462391 usec
+entire program time: 4905102 usec
+% serial: 9.427 %
+
+Number of Workers = 87
+parallel time: 4352802 usec
+serial time: 454463 usec
+entire program time: 4807265 usec
+% serial: 9.454 %
+
+Number of Workers = 89
+parallel time: 4269186 usec
+serial time: 465024 usec
+entire program time: 4734211 usec
+% serial: 9.823 %
+
+Number of Workers = 91
+parallel time: 4176763 usec
+serial time: 464120 usec
+entire program time: 4640882 usec
+% serial: 10.001 %
+
+Number of Workers = 93
+parallel time: 4088153 usec
+serial time: 464936 usec
+entire program time: 4553089 usec
+% serial: 10.211 %
+
+Number of Workers = 95
+parallel time: 4032384 usec
+serial time: 467148 usec
+entire program time: 4499532 usec
+% serial: 10.382 %
+
+Number of Workers = 97
+parallel time: 3942465 usec
+serial time: 458157 usec
+entire program time: 4400622 usec
+% serial: 10.411 %
+
+Number of Workers = 99
+parallel time: 3862462 usec
+serial time: 460489 usec
+entire program time: 4322951 usec
+% serial: 10.652 %
+
+Number of Workers = 101
+parallel time: 3815144 usec
+serial time: 456220 usec
+entire program time: 4271364 usec
+% serial: 10.681 %
+
+Number of Workers = 103
+parallel time: 3739576 usec
+serial time: 461419 usec
+entire program time: 4200995 usec
+% serial: 10.984 %
+
+Number of Workers = 105
+parallel time: 3657867 usec
+serial time: 458901 usec
+entire program time: 4116768 usec
+% serial: 11.147 %
+
+Number of Workers = 107
+parallel time: 3613048 usec
+serial time: 462705 usec
+entire program time: 4075752 usec
+% serial: 11.353 %
+
+Number of Workers = 109
+parallel time: 3531560 usec
+serial time: 462151 usec
+entire program time: 3993711 usec
+% serial: 11.572 %
+
+Number of Workers = 111
+parallel time: 3466686 usec
+serial time: 466475 usec
+entire program time: 3933162 usec
+% serial: 11.860 %
+
+Number of Workers = 113
+parallel time: 3383972 usec
+serial time: 464493 usec
+entire program time: 3848465 usec
+% serial: 12.070 %
+
+Number of Workers = 115
+parallel time: 3336694 usec
+serial time: 462024 usec
+entire program time: 3798718 usec
+% serial: 12.163 %
+
+Number of Workers = 117
+parallel time: 3270664 usec
+serial time: 463215 usec
+entire program time: 3733879 usec
+% serial: 12.406 %
+
+Number of Workers = 119
+parallel time: 3218755 usec
+serial time: 462101 usec
+entire program time: 3680856 usec
+% serial: 12.554 %
+
+Number of Workers = 121
+parallel time: 3176617 usec
+serial time: 462261 usec
+entire program time: 3638878 usec
+% serial: 12.703 %
+
+Number of Workers = 123
+parallel time: 3112688 usec
+serial time: 462788 usec
+entire program time: 3575476 usec
+% serial: 12.943 %
+
+Number of Workers = 125
+parallel time: 3073296 usec
+serial time: 459669 usec
+entire program time: 3532966 usec
+% serial: 13.011 %
+
+Number of Workers = 127
+parallel time: 3035751 usec
+serial time: 462365 usec
+entire program time: 3498116 usec
+% serial: 13.218 %
+
+Number of Workers = 129
+parallel time: 4245287 usec
+serial time: 455320 usec
+entire program time: 4700607 usec
+% serial: 9.686 %
+
+Number of Workers = 131
+parallel time: 4233719 usec
+serial time: 457177 usec
+entire program time: 4690896 usec
+% serial: 9.746 %
+
+Number of Workers = 133
+parallel time: 4170806 usec
+serial time: 454085 usec
+entire program time: 4624892 usec
+% serial: 9.818 %
+
+Number of Workers = 135
+parallel time: 4107082 usec
+serial time: 451380 usec
+entire program time: 4558462 usec
+% serial: 9.902 %
+
+Number of Workers = 137
+parallel time: 4045356 usec
+serial time: 457262 usec
+entire program time: 4502619 usec
+% serial: 10.155 %
+
+Number of Workers = 139
+parallel time: 3992160 usec
+serial time: 455333 usec
+entire program time: 4447493 usec
+% serial: 10.238 %
+
+Number of Workers = 141
+parallel time: 3938920 usec
+serial time: 455540 usec
+entire program time: 4394460 usec
+% serial: 10.366 %
+
+Number of Workers = 143
+parallel time: 3886112 usec
+serial time: 459596 usec
+entire program time: 4345708 usec
+% serial: 10.576 %
+
+Number of Workers = 145
+parallel time: 3828961 usec
+serial time: 465029 usec
+entire program time: 4293990 usec
+% serial: 10.830 %
+
+Number of Workers = 147
+parallel time: 3787126 usec
+serial time: 457460 usec
+entire program time: 4244586 usec
+% serial: 10.778 %
+
+Number of Workers = 149
+parallel time: 3739018 usec
+serial time: 453366 usec
+entire program time: 4192384 usec
+% serial: 10.814 %
+
+Number of Workers = 151
+parallel time: 3686718 usec
+serial time: 459004 usec
+entire program time: 4145721 usec
+% serial: 11.072 %
+
+Number of Workers = 153
+parallel time: 3641878 usec
+serial time: 459331 usec
+entire program time: 4101209 usec
+% serial: 11.200 %
+
+Number of Workers = 155
+parallel time: 3598208 usec
+serial time: 461573 usec
+entire program time: 4059780 usec
+% serial: 11.369 %
+
+Number of Workers = 157
+parallel time: 3552467 usec
+serial time: 467220 usec
+entire program time: 4019687 usec
+% serial: 11.623 %
+
+Number of Workers = 159
+parallel time: 3510132 usec
+serial time: 469633 usec
+entire program time: 3979765 usec
+% serial: 11.801 %
+
+Number of Workers = 161
+parallel time: 3469557 usec
+serial time: 465487 usec
+entire program time: 3935044 usec
+% serial: 11.829 %
+
+Number of Workers = 163
+parallel time: 3425570 usec
+serial time: 464761 usec
+entire program time: 3890331 usec
+% serial: 11.947 %
+
+Number of Workers = 165
+parallel time: 3386924 usec
+serial time: 465874 usec
+entire program time: 3852798 usec
+% serial: 12.092 %
+
+Number of Workers = 167
+parallel time: 3348859 usec
+serial time: 458435 usec
+entire program time: 3807294 usec
+% serial: 12.041 %
+
+Number of Workers = 169
+parallel time: 3321041 usec
+serial time: 463443 usec
+entire program time: 3784484 usec
+% serial: 12.246 %
+
+Number of Workers = 171
+parallel time: 3281913 usec
+serial time: 461704 usec
+entire program time: 3743617 usec
+% serial: 12.333 %
+
+Number of Workers = 173
+parallel time: 3243330 usec
+serial time: 461443 usec
+entire program time: 3704774 usec
+% serial: 12.455 %
+
+Number of Workers = 175
+parallel time: 3209188 usec
+serial time: 462159 usec
+entire program time: 3671347 usec
+% serial: 12.588 %
+
+Number of Workers = 177
+parallel time: 3177059 usec
+serial time: 462484 usec
+entire program time: 3639543 usec
+% serial: 12.707 %
+
+Number of Workers = 179
+parallel time: 3143548 usec
+serial time: 458625 usec
+entire program time: 3602173 usec
+% serial: 12.732 %
+
+Number of Workers = 181
+parallel time: 3117434 usec
+serial time: 458070 usec
+entire program time: 3575504 usec
+% serial: 12.811 %
+
+Number of Workers = 183
+parallel time: 3087633 usec
+serial time: 459919 usec
+entire program time: 3547552 usec
+% serial: 12.964 %
+
+Number of Workers = 185
+parallel time: 3056567 usec
+serial time: 459889 usec
+entire program time: 3516456 usec
+% serial: 13.078 %
+
+Number of Workers = 187
+parallel time: 3028255 usec
+serial time: 462004 usec
+entire program time: 3490259 usec
+% serial: 13.237 %
+
+Number of Workers = 189
+parallel time: 3003225 usec
+serial time: 454291 usec
+entire program time: 3457516 usec
+% serial: 13.139 %
+
+Number of Workers = 191
+parallel time: 2972197 usec
+serial time: 460411 usec
+entire program time: 3432608 usec
+% serial: 13.413 %
+
+Number of Workers = 193
+parallel time: 3588752 usec
+serial time: 454877 usec
+entire program time: 4043628 usec
+% serial: 11.249 %
+
+Number of Workers = 195
+parallel time: 3576784 usec
+serial time: 457930 usec
+entire program time: 4034714 usec
+% serial: 11.350 %
+
+Number of Workers = 197
+parallel time: 3552108 usec
+serial time: 455806 usec
+entire program time: 4007914 usec
+% serial: 11.373 %
+
+Number of Workers = 199
+parallel time: 3508914 usec
+serial time: 454771 usec
+entire program time: 3963686 usec
+% serial: 11.473 %
+
+Number of Workers = 201
+parallel time: 3473054 usec
+serial time: 456314 usec
+entire program time: 3929368 usec
+% serial: 11.613 %
+
+Number of Workers = 203
+parallel time: 3436325 usec
+serial time: 458796 usec
+entire program time: 3895121 usec
+% serial: 11.779 %
+
+Number of Workers = 205
+parallel time: 3413558 usec
+serial time: 457616 usec
+entire program time: 3871174 usec
+% serial: 11.821 %
+
+Number of Workers = 207
+parallel time: 3378710 usec
+serial time: 454205 usec
+entire program time: 3832915 usec
+% serial: 11.850 %
+
+Number of Workers = 209
+parallel time: 3354401 usec
+serial time: 456678 usec
+entire program time: 3811079 usec
+% serial: 11.983 %
+
+Number of Workers = 211
+parallel time: 3311601 usec
+serial time: 457280 usec
+entire program time: 3768880 usec
+% serial: 12.133 %
+
+Number of Workers = 213
+parallel time: 3296180 usec
+serial time: 459125 usec
+entire program time: 3755305 usec
+% serial: 12.226 %
+
+Number of Workers = 215
+parallel time: 3258517 usec
+serial time: 459376 usec
+entire program time: 3717893 usec
+% serial: 12.356 %
+
+Number of Workers = 217
+parallel time: 3234857 usec
+serial time: 459190 usec
+entire program time: 3694047 usec
+% serial: 12.431 %
+
+Number of Workers = 219
+parallel time: 3200095 usec
+serial time: 453710 usec
+entire program time: 3653804 usec
+% serial: 12.417 %
+
+Number of Workers = 221
+parallel time: 3178690 usec
+serial time: 456164 usec
+entire program time: 3634854 usec
+% serial: 12.550 %
+
+Number of Workers = 223
+parallel time: 3160897 usec
+serial time: 456984 usec
+entire program time: 3617881 usec
+% serial: 12.631 %
+
+Number of Workers = 225
+parallel time: 3120666 usec
+serial time: 456992 usec
+entire program time: 3577658 usec
+% serial: 12.774 %
+
+Number of Workers = 227
+parallel time: 3115397 usec
+serial time: 459935 usec
+entire program time: 3575332 usec
+% serial: 12.864 %
+
+Number of Workers = 229
+parallel time: 3080986 usec
+serial time: 457679 usec
+entire program time: 3538665 usec
+% serial: 12.934 %
+
+Number of Workers = 231
+parallel time: 3056621 usec
+serial time: 459148 usec
+entire program time: 3515769 usec
+% serial: 13.060 %
+
+Number of Workers = 233
+parallel time: 3032819 usec
+serial time: 455035 usec
+entire program time: 3487854 usec
+% serial: 13.046 %
+
+Number of Workers = 235
+parallel time: 3008714 usec
+serial time: 459405 usec
+entire program time: 3468118 usec
+% serial: 13.247 %
+
+Number of Workers = 237
+parallel time: 2976498 usec
+serial time: 459377 usec
+entire program time: 3435875 usec
+% serial: 13.370 %
+
+Number of Workers = 239
+parallel time: 2962448 usec
+serial time: 460352 usec
+entire program time: 3422800 usec
+% serial: 13.450 %
+
+Number of Workers = 241
+parallel time: 2941980 usec
+serial time: 458925 usec
+entire program time: 3400906 usec
+% serial: 13.494 %
+
+Number of Workers = 243
+parallel time: 2916784 usec
+serial time: 459125 usec
+entire program time: 3375909 usec
+% serial: 13.600 %
+
+Number of Workers = 245
+parallel time: 2905037 usec
+serial time: 466318 usec
+entire program time: 3371355 usec
+% serial: 13.832 %
+
+Number of Workers = 247
+parallel time: 2881651 usec
+serial time: 460582 usec
+entire program time: 3342233 usec
+% serial: 13.781 %
+
+Number of Workers = 249
+parallel time: 2868416 usec
+serial time: 455854 usec
+entire program time: 3324270 usec
+% serial: 13.713 %
+
+Number of Workers = 251
+parallel time: 2847837 usec
+serial time: 463936 usec
+entire program time: 3311773 usec
+% serial: 14.009 %
+
+Number of Workers = 253
+parallel time: 2823841 usec
+serial time: 462115 usec
+entire program time: 3285956 usec
+% serial: 14.063 %
+
+Number of Workers = 255
+parallel time: 2807984 usec
+serial time: 464034 usec
+entire program time: 3272017 usec
+% serial: 14.182 %
+
+---------- PARALLEL WITH FASTFLOW REDUCE ----------
+
+Number of Workers = 1
+parallel time: 205493078 usec
+serial time: 448218 usec
+entire program time: 205941296 usec
+% serial: 0.218 %
+
+Number of Workers = 3
+parallel time: 73404481 usec
+serial time: 451850 usec
+entire program time: 73856331 usec
+% serial: 0.612 %
+
+Number of Workers = 5
+parallel time: 44544702 usec
+serial time: 452366 usec
+entire program time: 44997068 usec
+% serial: 1.005 %
+
+Number of Workers = 7
+parallel time: 33785607 usec
+serial time: 464709 usec
+entire program time: 34250316 usec
+% serial: 1.357 %
+
+Number of Workers = 9
+parallel time: 24658734 usec
+serial time: 462522 usec
+entire program time: 25121256 usec
+% serial: 1.841 %
+
+Number of Workers = 11
+parallel time: 20198466 usec
+serial time: 457194 usec
+entire program time: 20655660 usec
+% serial: 2.213 %
+
+Number of Workers = 13
+parallel time: 17131628 usec
+serial time: 452136 usec
+entire program time: 17583764 usec
+% serial: 2.571 %
+
+Number of Workers = 15
+parallel time: 14867563 usec
+serial time: 452244 usec
+entire program time: 15319807 usec
+% serial: 2.952 %
+
+Number of Workers = 17
+parallel time: 13672088 usec
+serial time: 464972 usec
+entire program time: 14137060 usec
+% serial: 3.289 %
+
+Number of Workers = 19
+parallel time: 12203125 usec
+serial time: 464335 usec
+entire program time: 12667460 usec
+% serial: 3.666 %
+
+Number of Workers = 21
+parallel time: 10951081 usec
+serial time: 466373 usec
+entire program time: 11417454 usec
+% serial: 4.085 %
+
+Number of Workers = 23
+parallel time: 10823623 usec
+serial time: 464999 usec
+entire program time: 11288623 usec
+% serial: 4.119 %
+
+Number of Workers = 25
+parallel time: 9160963 usec
+serial time: 456838 usec
+entire program time: 9617801 usec
+% serial: 4.750 %
+
+Number of Workers = 27
+parallel time: 8344095 usec
+serial time: 452949 usec
+entire program time: 8797045 usec
+% serial: 5.149 %
+
+Number of Workers = 29
+parallel time: 7785075 usec
+serial time: 451946 usec
+entire program time: 8237021 usec
+% serial: 5.487 %
+
+Number of Workers = 31
+parallel time: 7294312 usec
+serial time: 459666 usec
+entire program time: 7753978 usec
+% serial: 5.928 %
+
+Number of Workers = 33
+parallel time: 7219430 usec
+serial time: 462303 usec
+entire program time: 7681732 usec
+% serial: 6.018 %
+
+Number of Workers = 35
+parallel time: 6604603 usec
+serial time: 467070 usec
+entire program time: 7071673 usec
+% serial: 6.605 %
+
+Number of Workers = 37
+parallel time: 6228478 usec
+serial time: 465256 usec
+entire program time: 6693734 usec
+% serial: 6.951 %
+
+Number of Workers = 39
+parallel time: 6451682 usec
+serial time: 466080 usec
+entire program time: 6917762 usec
+% serial: 6.737 %
+
+Number of Workers = 41
+parallel time: 5698511 usec
+serial time: 463168 usec
+entire program time: 6161679 usec
+% serial: 7.517 %
+
+Number of Workers = 43
+parallel time: 5415518 usec
+serial time: 465957 usec
+entire program time: 5881475 usec
+% serial: 7.922 %
+
+Number of Workers = 45
+parallel time: 5207144 usec
+serial time: 466430 usec
+entire program time: 5673574 usec
+% serial: 8.221 %
+
+Number of Workers = 47
+parallel time: 5094276 usec
+serial time: 466092 usec
+entire program time: 5560368 usec
+% serial: 8.382 %
+
+Number of Workers = 49
+parallel time: 4747043 usec
+serial time: 453672 usec
+entire program time: 5200714 usec
+% serial: 8.723 %
+
+Number of Workers = 51
+parallel time: 4578277 usec
+serial time: 450936 usec
+entire program time: 5029212 usec
+% serial: 8.966 %
+
+Number of Workers = 53
+parallel time: 4433829 usec
+serial time: 450001 usec
+entire program time: 4883830 usec
+% serial: 9.214 %
+
+Number of Workers = 55
+parallel time: 4300454 usec
+serial time: 450288 usec
+entire program time: 4750742 usec
+% serial: 9.478 %
+
+Number of Workers = 57
+parallel time: 4162746 usec
+serial time: 453534 usec
+entire program time: 4616280 usec
+% serial: 9.825 %
+
+Number of Workers = 59
+parallel time: 4047076 usec
+serial time: 446861 usec
+entire program time: 4493936 usec
+% serial: 9.944 %
+
+Number of Workers = 61
+parallel time: 4319936 usec
+serial time: 465605 usec
+entire program time: 4785541 usec
+% serial: 9.729 %
+
+Number of Workers = 63
+parallel time: 4334016 usec
+serial time: 465385 usec
+entire program time: 4799401 usec
+% serial: 9.697 %
+
+Number of Workers = 65
+parallel time: 6083696 usec
+serial time: 466641 usec
+entire program time: 6550336 usec
+% serial: 7.124 %
+
+Number of Workers = 67
+parallel time: 5707701 usec
+serial time: 465207 usec
+entire program time: 6172908 usec
+% serial: 7.536 %
+
+Number of Workers = 69
+parallel time: 5534934 usec
+serial time: 465443 usec
+entire program time: 6000377 usec
+% serial: 7.757 %
+
+Number of Workers = 71
+parallel time: 5412137 usec
+serial time: 466573 usec
+entire program time: 5878710 usec
+% serial: 7.937 %
+
+Number of Workers = 73
+parallel time: 5689290 usec
+serial time: 465788 usec
+entire program time: 6155078 usec
+% serial: 7.568 %
+
+Number of Workers = 75
+parallel time: 5922281 usec
+serial time: 464833 usec
+entire program time: 6387114 usec
+% serial: 7.278 %
+
+Number of Workers = 77
+parallel time: 5367468 usec
+serial time: 463546 usec
+entire program time: 5831014 usec
+% serial: 7.950 %
+
+Number of Workers = 79
+parallel time: 5236467 usec
+serial time: 465829 usec
+entire program time: 5702297 usec
+% serial: 8.169 %
+
+Number of Workers = 81
+parallel time: 5133744 usec
+serial time: 465513 usec
+entire program time: 5599257 usec
+% serial: 8.314 %
+
+Number of Workers = 83
+parallel time: 4661407 usec
+serial time: 458629 usec
+entire program time: 5120036 usec
+% serial: 8.958 %
+
+Number of Workers = 85
+parallel time: 4552512 usec
+serial time: 447474 usec
+entire program time: 4999986 usec
+% serial: 8.950 %
+
+Number of Workers = 87
+parallel time: 4459786 usec
+serial time: 450066 usec
+entire program time: 4909852 usec
+% serial: 9.167 %
+
+Number of Workers = 89
+parallel time: 4386133 usec
+serial time: 461374 usec
+entire program time: 4847507 usec
+% serial: 9.518 %
+
+Number of Workers = 91
+parallel time: 4317029 usec
+serial time: 449898 usec
+entire program time: 4766927 usec
+% serial: 9.438 %
+
+Number of Workers = 93
+parallel time: 4236508 usec
+serial time: 457677 usec
+entire program time: 4694186 usec
+% serial: 9.750 %
+
+Number of Workers = 95
+parallel time: 4132200 usec
+serial time: 453029 usec
+entire program time: 4585229 usec
+% serial: 9.880 %
+
+Number of Workers = 97
+parallel time: 4095023 usec
+serial time: 458656 usec
+entire program time: 4553680 usec
+% serial: 10.072 %
+
+Number of Workers = 99
+parallel time: 4005292 usec
+serial time: 449980 usec
+entire program time: 4455272 usec
+% serial: 10.100 %
+
+Number of Workers = 101
+parallel time: 4174337 usec
+serial time: 462232 usec
+entire program time: 4636569 usec
+% serial: 9.969 %
+
+Number of Workers = 103
+parallel time: 4335152 usec
+serial time: 466194 usec
+entire program time: 4801346 usec
+% serial: 9.710 %
+
+Number of Workers = 105
+parallel time: 4074785 usec
+serial time: 466763 usec
+entire program time: 4541548 usec
+% serial: 10.278 %
+
+Number of Workers = 107
+parallel time: 3979047 usec
+serial time: 465497 usec
+entire program time: 4444543 usec
+% serial: 10.473 %
+
+Number of Workers = 109
+parallel time: 3982795 usec
+serial time: 465581 usec
+entire program time: 4448376 usec
+% serial: 10.466 %
+
+Number of Workers = 111
+parallel time: 4111845 usec
+serial time: 469332 usec
+entire program time: 4581177 usec
+% serial: 10.245 %
+
+Number of Workers = 113
+parallel time: 4545672 usec
+serial time: 467394 usec
+entire program time: 5013066 usec
+% serial: 9.324 %
+
+Number of Workers = 115
+parallel time: 3954503 usec
+serial time: 466901 usec
+entire program time: 4421404 usec
+% serial: 10.560 %
+
+Number of Workers = 117
+parallel time: 3738253 usec
+serial time: 467425 usec
+entire program time: 4205678 usec
+% serial: 11.114 %
+
+Number of Workers = 119
+parallel time: 4077766 usec
+serial time: 466659 usec
+entire program time: 4544425 usec
+% serial: 10.269 %
+
+Number of Workers = 121
+parallel time: 4186349 usec
+serial time: 468846 usec
+entire program time: 4655195 usec
+% serial: 10.071 %
+
+Number of Workers = 123
+parallel time: 4138899 usec
+serial time: 467825 usec
+entire program time: 4606724 usec
+% serial: 10.155 %
+
+Number of Workers = 125
+parallel time: 3860752 usec
+serial time: 465459 usec
+entire program time: 4326212 usec
+% serial: 10.759 %
+
+Number of Workers = 127
+parallel time: 4087049 usec
+serial time: 465694 usec
+entire program time: 4552743 usec
+% serial: 10.229 %
+
+Number of Workers = 129
+parallel time: 4436923 usec
+serial time: 462379 usec
+entire program time: 4899302 usec
+% serial: 9.438 %
+
+Number of Workers = 131
+parallel time: 4425086 usec
+serial time: 465014 usec
+entire program time: 4890100 usec
+% serial: 9.509 %
+
+Number of Workers = 133
+parallel time: 4323919 usec
+serial time: 451895 usec
+entire program time: 4775814 usec
+% serial: 9.462 %
+
+Number of Workers = 135
+parallel time: 4266845 usec
+serial time: 449657 usec
+entire program time: 4716502 usec
+% serial: 9.534 %
+
+Number of Workers = 137
+parallel time: 4198947 usec
+serial time: 451592 usec
+entire program time: 4650539 usec
+% serial: 9.711 %
+
+Number of Workers = 139
+parallel time: 4152246 usec
+serial time: 450561 usec
+entire program time: 4602807 usec
+% serial: 9.789 %
+
+Number of Workers = 141
+parallel time: 4097916 usec
+serial time: 449847 usec
+entire program time: 4547764 usec
+% serial: 9.892 %
+
+Number of Workers = 143
+parallel time: 4046108 usec
+serial time: 451659 usec
+entire program time: 4497767 usec
+% serial: 10.042 %
+
+Number of Workers = 145
+parallel time: 3994369 usec
+serial time: 453764 usec
+entire program time: 4448133 usec
+% serial: 10.201 %
+
+Number of Workers = 147
+parallel time: 3945014 usec
+serial time: 453704 usec
+entire program time: 4398718 usec
+% serial: 10.314 %
+
+Number of Workers = 149
+parallel time: 3902252 usec
+serial time: 452823 usec
+entire program time: 4355075 usec
+% serial: 10.398 %
+
+Number of Workers = 151
+parallel time: 3861945 usec
+serial time: 454998 usec
+entire program time: 4316943 usec
+% serial: 10.540 %
+
+Number of Workers = 153
+parallel time: 3810573 usec
+serial time: 445369 usec
+entire program time: 4255942 usec
+% serial: 10.465 %
+
+Number of Workers = 155
+parallel time: 3754682 usec
+serial time: 458542 usec
+entire program time: 4213224 usec
+% serial: 10.883 %
+
+Number of Workers = 157
+parallel time: 3715361 usec
+serial time: 449830 usec
+entire program time: 4165191 usec
+% serial: 10.800 %
+
+Number of Workers = 159
+parallel time: 3673376 usec
+serial time: 448527 usec
+entire program time: 4121902 usec
+% serial: 10.882 %
+
+Number of Workers = 161
+parallel time: 3640679 usec
+serial time: 446377 usec
+entire program time: 4087056 usec
+% serial: 10.922 %
+
+Number of Workers = 163
+parallel time: 3597780 usec
+serial time: 453515 usec
+entire program time: 4051294 usec
+% serial: 11.194 %
+
+Number of Workers = 165
+parallel time: 3555509 usec
+serial time: 455814 usec
+entire program time: 4011323 usec
+% serial: 11.363 %
+
+Number of Workers = 167
+parallel time: 3518225 usec
+serial time: 453508 usec
+entire program time: 3971733 usec
+% serial: 11.418 %
+
+Number of Workers = 169
+parallel time: 3574065 usec
+serial time: 463086 usec
+entire program time: 4037151 usec
+% serial: 11.471 %
+
+Number of Workers = 171
+parallel time: 3813773 usec
+serial time: 462965 usec
+entire program time: 4276738 usec
+% serial: 10.825 %
+
+Number of Workers = 173
+parallel time: 3791100 usec
+serial time: 463105 usec
+entire program time: 4254205 usec
+% serial: 10.886 %
+
+Number of Workers = 175
+parallel time: 3750057 usec
+serial time: 469360 usec
+entire program time: 4219417 usec
+% serial: 11.124 %
+
+Number of Workers = 177
+parallel time: 3579437 usec
+serial time: 462186 usec
+entire program time: 4041623 usec
+% serial: 11.436 %
+
+Number of Workers = 179
+parallel time: 3719337 usec
+serial time: 462374 usec
+entire program time: 4181711 usec
+% serial: 11.057 %
+
+Number of Workers = 181
+parallel time: 3569338 usec
+serial time: 463921 usec
+entire program time: 4033258 usec
+% serial: 11.502 %
+
+Number of Workers = 183
+parallel time: 3636120 usec
+serial time: 463918 usec
+entire program time: 4100038 usec
+% serial: 11.315 %
+
+Number of Workers = 185
+parallel time: 3607872 usec
+serial time: 462144 usec
+entire program time: 4070015 usec
+% serial: 11.355 %
+
+Number of Workers = 187
+parallel time: 3671558 usec
+serial time: 462917 usec
+entire program time: 4134475 usec
+% serial: 11.197 %
+
+Number of Workers = 189
+parallel time: 3576457 usec
+serial time: 462236 usec
+entire program time: 4038693 usec
+% serial: 11.445 %
+
+Number of Workers = 191
+parallel time: 3696490 usec
+serial time: 467202 usec
+entire program time: 4163691 usec
+% serial: 11.221 %
+
+Number of Workers = 193
+parallel time: 3757497 usec
+serial time: 464323 usec
+entire program time: 4221820 usec
+% serial: 10.998 %
+
+Number of Workers = 195
+parallel time: 3732717 usec
+serial time: 463356 usec
+entire program time: 4196073 usec
+% serial: 11.043 %
+
+Number of Workers = 197
+parallel time: 3702905 usec
+serial time: 462277 usec
+entire program time: 4165182 usec
+% serial: 11.099 %
+
+Number of Workers = 199
+parallel time: 3664532 usec
+serial time: 462505 usec
+entire program time: 4127037 usec
+% serial: 11.207 %
+
+Number of Workers = 201
+parallel time: 3638720 usec
+serial time: 462015 usec
+entire program time: 4100735 usec
+% serial: 11.267 %
+
+Number of Workers = 203
+parallel time: 3599191 usec
+serial time: 462506 usec
+entire program time: 4061698 usec
+% serial: 11.387 %
+
+Number of Workers = 205
+parallel time: 3575718 usec
+serial time: 466989 usec
+entire program time: 4042708 usec
+% serial: 11.551 %
+
+Number of Workers = 207
+parallel time: 3548379 usec
+serial time: 463425 usec
+entire program time: 4011803 usec
+% serial: 11.552 %
+
+Number of Workers = 209
+parallel time: 3534450 usec
+serial time: 459076 usec
+entire program time: 3993526 usec
+% serial: 11.496 %
+
+Number of Workers = 211
+parallel time: 3490655 usec
+serial time: 455402 usec
+entire program time: 3946057 usec
+% serial: 11.541 %
+
+Number of Workers = 213
+parallel time: 3473024 usec
+serial time: 455979 usec
+entire program time: 3929003 usec
+% serial: 11.605 %
+
+Number of Workers = 215
+parallel time: 3446573 usec
+serial time: 454389 usec
+entire program time: 3900962 usec
+% serial: 11.648 %
+
+Number of Workers = 217
+parallel time: 3412391 usec
+serial time: 451773 usec
+entire program time: 3864164 usec
+% serial: 11.691 %
+
+Number of Workers = 219
+parallel time: 3392575 usec
+serial time: 454161 usec
+entire program time: 3846736 usec
+% serial: 11.806 %
+
+Number of Workers = 221
+parallel time: 3366197 usec
+serial time: 454360 usec
+entire program time: 3820557 usec
+% serial: 11.893 %
+
+Number of Workers = 223
+parallel time: 3346667 usec
+serial time: 452046 usec
+entire program time: 3798713 usec
+% serial: 11.900 %
+
+Number of Workers = 225
+parallel time: 3318585 usec
+serial time: 449868 usec
+entire program time: 3768453 usec
+% serial: 11.938 %
+
+Number of Workers = 227
+parallel time: 3284604 usec
+serial time: 451418 usec
+entire program time: 3736022 usec
+% serial: 12.083 %
+
+Number of Workers = 229
+parallel time: 3267003 usec
+serial time: 455557 usec
+entire program time: 3722560 usec
+% serial: 12.238 %
+
+Number of Workers = 231
+parallel time: 3243390 usec
+serial time: 453600 usec
+entire program time: 3696990 usec
+% serial: 12.269 %
+
+Number of Workers = 233
+parallel time: 3214338 usec
+serial time: 452165 usec
+entire program time: 3666503 usec
+% serial: 12.332 %
+
+Number of Workers = 235
+parallel time: 3205077 usec
+serial time: 453558 usec
+entire program time: 3658635 usec
+% serial: 12.397 %
+
+Number of Workers = 237
+parallel time: 3178888 usec
+serial time: 450232 usec
+entire program time: 3629120 usec
+% serial: 12.406 %
+
+Number of Workers = 239
+parallel time: 3163268 usec
+serial time: 451277 usec
+entire program time: 3614545 usec
+% serial: 12.485 %
+
+Number of Workers = 241
+parallel time: 3140686 usec
+serial time: 448171 usec
+entire program time: 3588857 usec
+% serial: 12.488 %
+
+Number of Workers = 243
+parallel time: 3116581 usec
+serial time: 451897 usec
+entire program time: 3568478 usec
+% serial: 12.664 %
+
+Number of Workers = 245
+parallel time: 3070643 usec
+serial time: 462708 usec
+entire program time: 3533351 usec
+% serial: 13.095 %
+
+Number of Workers = 247
+parallel time: 3060959 usec
+serial time: 476175 usec
+entire program time: 3537133 usec
+% serial: 13.462 %
+
+Number of Workers = 249
+parallel time: 3048444 usec
+serial time: 462638 usec
+entire program time: 3511082 usec
+% serial: 13.177 %
+
+Number of Workers = 251
+parallel time: 3024189 usec
+serial time: 464166 usec
+entire program time: 3488355 usec
+% serial: 13.306 %
+
+Number of Workers = 253
+parallel time: 3012452 usec
+serial time: 465610 usec
+entire program time: 3478062 usec
+% serial: 13.387 %
+
+Number of Workers = 255
+parallel time: 3003741 usec
+serial time: 463377 usec
+entire program time: 3467118 usec
+% serial: 13.365 %
