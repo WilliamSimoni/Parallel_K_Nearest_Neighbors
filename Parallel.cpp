@@ -26,19 +26,12 @@ int main(int argc, char *argv[])
     int K = atoi(argv[2]);
     int n_w = atoi(argv[3]);
 
-    int pin_threads = 0;
-    if (argc == 5)
-        pin_threads = atoi(argv[4]);
-
     // read the file
     PointVector pv = read(filename);
 
-    // vector containing the time required by each worker
-    vector<long int> times_per_thread(n_w);
-
     vector<string> results(n_w);
 
-    //function executed by the thread
+    // function executed by the thread
     auto f = [&](int start, int end, int id)
     {
         START(begin)
@@ -52,69 +45,54 @@ int main(int argc, char *argv[])
         }
 
         results[id] = result;
-
-        STOP(begin, elapsed)
-        times_per_thread[id] = elapsed;
     };
 
-    // static split
-    int chunk_size = (pv.size) / n_w;
-    int bonus = (pv.size) - chunk_size * n_w;
-    vector<pair<float, int>> slices;
-    for (int start = 0, end = chunk_size;
-         start < (pv.size);
-         start = end, end = start + chunk_size)
+    // static split and creation of the threads
+
     {
-        if (bonus)
+        utimer tm("Parallel Time");
+
+        int chunk_size = (pv.size) / n_w;
+        int bonus = (pv.size) - chunk_size * n_w;
+        vector<thread> threads;
+
+        for (int start = 0, end = chunk_size, i = 0;
+             start < (pv.size);
+             start = end, end = start + chunk_size, i++)
         {
-            end++;
-            bonus--;
-        }
+            if (bonus)
+            {
+                end++;
+                bonus--;
+            }
 
-        slices.push_back(make_pair(start, end));
-    }
+            threads.push_back(thread(f, start, end, i));
 
-    vector<thread> threads;
-
-    // creating threads
-    for (int i = 0; i < n_w; i++)
-    {
-        threads.push_back(thread(f, slices[i].first, slices[i].second, i));
-
-        // pinning threads (if requested)
+            // pinning threads (if requested)
 #ifdef DOPINNING
-        // code from https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/
-        //  Create a cpu_set_t object representing a set of CPUs. Clear it and mark
-        //  only CPU i as set.
-        cpu_set_t cpuset;
-        CPU_ZERO(&cpuset);
-        CPU_SET(i, &cpuset);
-        int rc = pthread_setaffinity_np(threads[i].native_handle(),
-                                        sizeof(cpu_set_t), &cpuset);
-        if (rc != 0)
-        {
-            std::cerr << "Error calling pthread_setaffinity_np: " << rc << "\n";
-        }
+            // code from https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/
+            //  Create a cpu_set_t object representing a set of CPUs. Clear it and mark
+            //  only CPU i as set.
+            cpu_set_t cpuset;
+            CPU_ZERO(&cpuset);
+            CPU_SET(i, &cpuset);
+            int rc = pthread_setaffinity_np(threads[i].native_handle(),
+                                            sizeof(cpu_set_t), &cpuset);
+            if (rc != 0)
+            {
+                std::cerr << "Error calling pthread_setaffinity_np: " << rc << "\n";
+            }
 #endif
+        }
+
+        for (auto &th : threads)
+        {
+            th.join();
+        }
     }
 
-    for (auto &th : threads)
-    {
-        th.join();
-    }
-
-    save("./resultParallel", results);
-
-    // computing tot time for parallel part
-    auto max_time = times_per_thread[0];
-    for (int i = 1; i < n_w; i++)
-    {
-        if (max_time < times_per_thread[i])
-            max_time = times_per_thread[i];
-    }
-
-    // print the parallel time (max of times_per_thread)
-    cout << "parallel cost computed in " << max_time << " usec " << std::endl;
+    // save result
+    save("resultParallel", results);
 
     return 0;
 }
